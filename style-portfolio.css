@@ -1,0 +1,32 @@
+a[href^="##"]{
+    color: #2196F3;
+}
+nav a{
+    color: #212121;
+}
+main p{
+    color: #757575;
+}
+#filter a{
+    color: #212121;
+    background-color: #F5F4FA;
+}
+a{
+    text-decoration: none;
+}
+footer a{
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+address, h1{
+    color: #FFFFFF;
+}
+.blue {
+     color: #2196F3;
+}
+.gray {
+    color: #757575; 
+}
+footer{
+    background-color: #2F303A;
+}
