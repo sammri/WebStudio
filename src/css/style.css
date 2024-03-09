@@ -7,4 +7,18 @@ body{
     --color3: #FFFFFF;
     --color4: #2F303A;
     --color5: #212121;
-  }
+}
+
+.block-first h1 {
+  line-height: 1.4;
+}
+.block-first_link {
+  line-height: 1.9;
+}
+.item_description{
+  line-height: 1.7;
+}
+.info_address, .info_link{
+  line-height: 1.7;
+}
+

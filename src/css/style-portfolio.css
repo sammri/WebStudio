@@ -8,4 +8,16 @@ body{
     --color4: #2196F3;
     --color5: #FFFFFF;
     --color6: #F5F4FA;
-  }
+}
+.filter_link{
+  line-height: 1.6;
+}
+.item_title{
+  line-height: 2;
+}
+.item_category{
+  line-height: 1.9;
+}
+.info_address, .info_link{
+  line-height: 1.7;
+}
