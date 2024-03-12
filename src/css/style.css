@@ -1,60 +1,60 @@
-body{
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-}
 :root {
   /* Кольори макету */
   /* Текст */
-  --colorTextPrimary: #212121;
-  --colorTextSecondary: #757575;
-  --colorTextTertiary: #fff;
-  --colorTextAdditional: rgba(255, 255, 255, 0.6);
+  --colorTextTitle: #212121;
+  --colorText: #757575;
+  --colorTextContrast: #fff;
+  --colorTextAdd: rgba(255, 255, 255, 0.6);
   --colorHover: #2196f3;
   /* Фон */
   --colorBackgroundPrimary: #2f303a;
   --colorBackgroundSecondary: #f5f4fa;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
 
 /* header */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
-.nav_link, .nav-list{
+.nav_link,
+.nav-list {
   font-size: 14px;
   list-style: none;
   text-decoration: none;
-  color: #212121;
+  color: var(--colorTextTitle);
   font-weight: 500;
 }
-.contact_link, .header_contact{
+.contact_link,
+.header_contact {
   font-size: 14px;
   list-style: none;
   text-decoration: none;
-  color: #757575;
+  color: var(--colorText);
   font-weight: 500;
 }
-.nav_link:hover, .contact_link:hover{
-  color: #2196F3;
+.nav_link:hover,
+.contact_link:hover {
+  color: var(--colorHover);
 }
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
-
 
 /* main */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
 
-
 /* block-first */
 /* ---------------------------------- */
-.block-first_title{
+.block-first_title {
   line-height: 1.363;
   font-size: 44px;
   /* color: #fff; */
   font-weight: 900;
-  text-transform: uppercase
-  
+  text-transform: uppercase;
 }
 .block-first_link {
   line-height: 1.875;
-  /* color: #fff; */
+  /* color: var(--colorTextContrast); */
   font-weight: 700;
   text-decoration: none;
 }
@@ -62,17 +62,17 @@ body{
 
 /* about */
 /* ---------------------------------- */
-.list_item{
+.list_item {
   list-style: none;
 }
-.item_title{
+.item_title {
   font-size: 14px;
-  color: #212121;
+  color: var(--colorTextTitle);
   font-weight: 700;
 }
-.item_description{
+.item_description {
   font-size: 14px;
-  color: #757575;
+  color: var(--colorText);
   font-weight: 400;
   line-height: 1.714;
 }
@@ -80,52 +80,53 @@ body{
 
 /* services */
 /* ---------------------------------- */
-.services_title{
+.services_title {
   font-size: 36px;
   font-weight: 700;
-  color: #212121;
+  color: var(--colorTextTitle);
 }
 /* ---------------------------------- */
 
 /* team */
 /* ---------------------------------- */
-.team_title{
+.team_title {
   font-size: 36px;
   font-weight: 700;
-  color: #212121;
+  color: var(--colorTextTitle);
 }
-.team-member_name{
-  color: #212121;
+.team-member_name {
+  color: var(--colorTextTitle);
   font-weight: 500;
   font-size: 16px;
-
 }
-.team-member_position{
-  color: #757575;
+.team-member_position {
+  color: var(--colorText);
   font-weight: 400;
   font-size: 16px;
 }
 /* ---------------------------------- */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
+
 
 /* footer */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
+
 /* footer_info */
 /* ---------------------------------- */
-.footer_info, .footer_info a{
+.footer_info,
+.footer_info a {
   list-style: none;
   text-decoration: none;
 }
-.info_address{
-  /* color: #fff; */
+.info_address {
+  /* color: var(--colorTextContrast); */
   font-size: 14px;
   font-weight: 400;
   line-height: 1.714;
   font-style: normal;
- 
-} 
-.info_link{
-  /* color: rgba(255, 255, 255, 0.6); */
+}
+.info_link {
+   color: var(--colorTextAdd);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
@@ -133,9 +134,4 @@ body{
 }
 /* ---------------------------------- */
 
-
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
-
-
-
-

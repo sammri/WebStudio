@@ -1,29 +1,107 @@
-body{
-  font-family: "Roboto", sans-serif;
-}
 :root {
   /* Кольори макету */
   /* Текст */
-  --colorTextPrimary: #212121;
-  --colorTextSecondary: #757575;
-  --colorTextTertiary: #fff;
-  --colorTextAdditional: rgba(255, 255, 255, 0.6);
+  --colorTextTitle: #212121;
+  --colorText: #757575;
+  --colorTextContrast: #fff;
+  --colorTextAdd: rgba(255, 255, 255, 0.6);
   --colorHover: #2196f3;
   /* Фон */
   --colorBackgroundPrimary: #2f303a;
   --colorBackgroundSecondary: #f5f4fa;
 
 }
-
-.filter_link{
-  line-height: 1.6;
+body{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
+
+
+/* header */
+/* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
+.nav_link, .nav_list{
+  font-size: 14px;
+  list-style: none;
+  text-decoration: none;
+  color: var(--colorTextTitle);
+  font-weight: 500;
+}
+.contact-info_link, .header_contact-info{
+  font-size: 14px;
+  list-style: none;
+  text-decoration: none;
+  color: var(--colorText);
+  font-weight: 500;
+}
+.nav_link:hover, .contact-info_link:hover{
+  color: var(--colorHover);
+}
+/* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
+
+
+/* main */
+/* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
+
+/* portfolio-section */
+/* ---------------------------------- */
+.portfolio-filter_list{
+  line-height: 1.625;
+  list-style: none;
+}
+.filter_link{
+  text-decoration: none;
+  color: var(--colorTextTitle);
+  line-height: 1.625;
+  
+}
+/* ---------------------------------- */
+
+/* portfolio-item */
+/* ---------------------------------- */
 .item_title{
   line-height: 2;
+  color: var(--colorTextTitle);
+  font-weight: 700;
 }
 .item_category{
-  line-height: 1.9;
+  line-height: 1.875;
+  color: var(--colorText);
+  font-weight: 400;
 }
-.info_address, .info_link{
-  line-height: 1.7;
+/* ---------------------------------- */
+
+/* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
+
+
+/* footer */
+/* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*
+
+/* footer_info */
+/* ---------------------------------- */
+.footer_info,
+.footer_info a {
+  list-style: none;
+  text-decoration: none;
 }
+.info_address {
+  /* color: var(--colorTextContrast); */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
+  font-style: normal;
+}
+.info_link {
+   color: var(--colorTextAdd);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  font-style: normal;
+}
+/* ---------------------------------- */
+
+/* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
+
+
+
+
+
