@@ -2,13 +2,19 @@ body{
   font-family: "Roboto", sans-serif;
 }
 :root {
-    --color1: #212121;
-    --color2: #2F303A;
-    --color3: #757575;
-    --color4: #2196F3;
-    --color5: #FFFFFF;
-    --color6: #F5F4FA;
+  /* Кольори макету */
+  /* Текст */
+  --colorTextPrimary: #212121;
+  --colorTextSecondary: #757575;
+  --colorTextTertiary: #fff;
+  --colorTextAdditional: rgba(255, 255, 255, 0.6);
+  --colorHover: #2196f3;
+  /* Фон */
+  --colorBackgroundPrimary: #2f303a;
+  --colorBackgroundSecondary: #f5f4fa;
+
 }
+
 .filter_link{
   line-height: 1.6;
 }
