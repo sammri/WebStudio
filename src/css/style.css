@@ -43,16 +43,16 @@ body {
 /* main */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
 
-/* block-first */
+/* hero */
 /* ---------------------------------- */
-.block-first_title {
+.hero_title {
   line-height: 1.363;
   font-size: 44px;
   color: var(--colorTextContrast);
   font-weight: 900;
   text-transform: uppercase;
 }
-.block-first_link {
+.hero_link {
   line-height: 1.875;
   /* color: var(--colorTextContrast); */
   font-weight: 700;
@@ -62,15 +62,15 @@ body {
 
 /* about */
 /* ---------------------------------- */
-.list_item {
+.about_list {
   list-style: none;
 }
-.item_title {
+.about_title {
   font-size: 14px;
   color: var(--colorTextTitle);
   font-weight: 700;
 }
-.item_description {
+.about_description {
   font-size: 14px;
   color: var(--colorText);
   font-weight: 400;
@@ -94,12 +94,12 @@ body {
   font-weight: 700;
   color: var(--colorTextTitle);
 }
-.team-member_name {
+.teammate_name {
   color: var(--colorTextTitle);
   font-weight: 500;
   font-size: 16px;
 }
-.team-member_position {
+.teammate_position {
   color: var(--colorText);
   font-weight: 400;
   font-size: 16px;
@@ -107,26 +107,25 @@ body {
 /* ---------------------------------- */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
 
-
 /* footer */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
 
 /* footer_info */
 /* ---------------------------------- */
-.footer_info,
-.footer_info a {
+.footer_info-list,
+.footer_info-list a {
   list-style: none;
   text-decoration: none;
 }
 .info_address {
-  /* color: var(--colorTextContrast); */
+  color: var(--colorTextContrast);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.714;
   font-style: normal;
 }
 .info_link {
-   color: var(--colorTextAdd);
+  color: var(--colorTextAdd);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;

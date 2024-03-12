@@ -9,61 +9,60 @@
   /* Фон */
   --colorBackgroundPrimary: #2f303a;
   --colorBackgroundSecondary: #f5f4fa;
-
 }
-body{
+body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
 
-
 /* header */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
-.nav_link, .nav_list{
+.nav_link,
+.nav_list {
   font-size: 14px;
   list-style: none;
   text-decoration: none;
   color: var(--colorTextTitle);
   font-weight: 500;
 }
-.contact-info_link, .header_contact-info{
+.contact-info_link,
+.header_contact-info {
   font-size: 14px;
   list-style: none;
   text-decoration: none;
   color: var(--colorText);
   font-weight: 500;
 }
-.nav_link:hover, .contact-info_link:hover{
+.nav_link:hover,
+.contact-info_link:hover {
   color: var(--colorHover);
 }
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
 
-
 /* main */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
 
-/* portfolio-section */
+/* portfolio*/
 /* ---------------------------------- */
-.portfolio-filter_list{
+.portfolio-filter_list {
   line-height: 1.625;
   list-style: none;
 }
-.filter_link{
+.filter_link {
   text-decoration: none;
   color: var(--colorTextTitle);
   line-height: 1.625;
-  
 }
 /* ---------------------------------- */
 
-/* portfolio-item */
+/* portfolio-things */
 /* ---------------------------------- */
-.item_title{
+.projeckt_title {
   line-height: 2;
   color: var(--colorTextTitle);
   font-weight: 700;
 }
-.item_category{
+.projeckt_category {
   line-height: 1.875;
   color: var(--colorText);
   font-weight: 400;
@@ -71,7 +70,6 @@ body{
 /* ---------------------------------- */
 
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
-
 
 /* footer */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*
@@ -84,14 +82,14 @@ body{
   text-decoration: none;
 }
 .info_address {
-  /* color: var(--colorTextContrast); */
+  color: var(--colorTextContrast);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.714;
   font-style: normal;
 }
 .info_link {
-   color: var(--colorTextAdd);
+  color: var(--colorTextAdd);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
@@ -100,8 +98,3 @@ body{
 /* ---------------------------------- */
 
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
-
-
-
-
-
