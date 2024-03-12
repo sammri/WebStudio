@@ -48,7 +48,7 @@ body {
 .block-first_title {
   line-height: 1.363;
   font-size: 44px;
-  /* color: #fff; */
+  color: var(--colorTextContrast);
   font-weight: 900;
   text-transform: uppercase;
 }
