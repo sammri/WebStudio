@@ -52,9 +52,9 @@ body {
   font-weight: 900;
   text-transform: uppercase;
 }
-.hero_link {
+.hero_button {
   line-height: 1.875;
-  /* color: var(--colorTextContrast); */
+  color: var(--colorTextContrast);
   font-weight: 700;
   text-decoration: none;
 }
