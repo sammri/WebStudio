@@ -1,153 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>page2</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style-portfolio.css" />
-  </head>
-  <body>
-    <header class="header">
-      <a href="#" class="header_logo"
-        ><img src="../img/logo/webstudio-logo.jpg" alt="Лого"
-      /></a>
-      <nav class="header_nav">
-        <ul class="nav_list">
-          <li><a href="../../index.html" class="nav_link">Студія</a></li>
-          <li><a href="#" class="nav_link">Портфоліо</a></li>
-          <li><a href="#" class="nav_link">Контакти</a></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>page2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../../src/css/normalize.css">
+  <link rel="stylesheet" href="../../src/css/reset.css">
+  <link rel="stylesheet" href="../../src/css/style-portfolio.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="header-logo"><img src="../../src/img/logo/webStudio-logo.jpg" alt="Лого" /></a>
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li>
+            <a href="../../index.html" class="nav-link">Студія</a>
+          </li>
+          <li>
+            <a href="#" rel="preconnect" class="nav-link">
+              Портфоліо
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Контакти</a>
+          </li>
         </ul>
       </nav>
-      <ul class="header_contact-info">
+      <ul class="header-contact">
         <li>
-          <a href="mailto:info@devstudio.com" class="contact-info_link"
-            >info@devstudio.com</a
-          >
+          <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
         </li>
         <li>
-          <a href="tel:+380961111111" class="contact-info_link"
-            >+38 096 111 11 11</a
-          >
+          <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
         </li>
       </ul>
-    </header>
-    <main class="main">
+    </div>
+  </header>
+
+  <main class="main">
       <section class="portfolio">
         <h2 hidden>Портфолио</h2>
-        <ul class="portfolio-filter_list">
-          <li class="filter-item"><a href="#" class="filter_link">Усi</a></li>
-          <li class="filter-item"><a href="#" class="filter_link">Веб-сайти</a></li>
-          <li class="filter-item"><a href="#" class="filter_link">Додатки</a></li>
-          <li class="filter-item"><a href="#" class="filter_link">Дизайн</a></li>
-          <li class="filter-item"><a href="#" class="filter_link">Маркетинг</a></li>
+        <ul class="portfolio-filter-list">
+          <li class="filter-item-all"><a href="#" class="filter-link">Усi</a></li>
+          <li class="filter-item-websites"><a href="#" class="filter-link">Веб-сайти</a></li>
+          <li class="filter-item-applications"><a href="#" class="filter-link">Додатки</a></li>
+          <li class="filter-item-design"><a href="#" class="filter-link">Дизайн</a></li>
+          <li class="filter-item-marketing"><a href="#" class="filter-link">Маркетинг</a></li>
         </ul>
-        <!-- первые 3 -->
-        <div class="projeckts">
-          <article class="projeckt">
-            <div class="projeckt_photo">
-              <img src="../img/img-portfolio/laptop.jpg" alt="ноутбук"  class="projeckt-img"/>
-            </div>
-            <h3 class="projeckt_title">Технокряк</h3>
-            <p class="projeckt_category">Веб-сайт</p>
-          </article>
-          <article class="projeckt">
-            <div class="projeckt_photo">
-              <img
-                src="../img/img-portfolio/basketballplayers.jpg"
-                alt="баскетбольні гравці"
-                class="projeckt-img"
-              />
-            </div>
-            <h3 class="projeckt_title">Постер New Orlean vs Golden Star</h3>
-            <p class="projeckt_category">Дизайн</p>
-            <article class="projeckt">
-              <div class="projeckt_photo">
-            <div class="things_img">
-              <img src="../img/img-portfolio/shark.jpg" alt="Акула"  class="projeckt-img"/>
-            </div>
-            <h3 class="projeckt_title">Ресторан Seafood</h3>
-            <p class="things_category">Додаток</p>
-          </article>
-
-          <!-- вторые 3 -->
-          <article class="projeckt">
-            <div class="projeckt_photo">
-              <img src="../img/img-portfolio/headphones.jpg" alt="Навушники"  class="projeckt-img"/>
-            </div>
-            <h3 class="projeckt_title">Проєкт Prime</h3>
-            <p class="things_category">Маркетинг</p>
-          </article>
-          <article class="projeckt">
-            <div class="projeckt_photo">
-              <img src="../img/img-portfolio/boxes.jpg" alt="Коробки"  class="projeckt-img"/>
-            </div>
-            <h3 class="projeckt_title">Проєкт Boxes</h3>
-            <p class="things_category">Додаток</p>
-          </article>
-          <article class="projeckt">
-            <div class="projeckt_photo">
-              <img src="../img/img-portfolio/monitor.jpg" alt="монiтор"  class="projeckt-img"/>
-            </div>
-            <h3 class="things_title">Inspiration has no Borders</h3>
-            <p class="things_category">Веб-сайт</p>
-          </article>
-
-          <!-- третие 3 -->
-          <article class="projeckt">
-            <div class="projeckt_photo">
-              <img src="../img/img-portfolio/magazine.jpg" alt="магазин"  class="projeckt-img"/>
-            </div>
-            <h3 class="projeckt_title">Видання Limited Edition</h3>
-            <p class="things_category">Дизайн</p>
-          </article>
-          <article class="projeckt">
-            <div class="projeckt_photo">
-              <img src="../img/img-portfolio/card.jpg" alt="карта"  class="projeckt-img"/>
-            </div>
-            <h3 class="projeckt_title">Проєкт LAB</h3>
-            <p class="things_category">Маркетинг</p>
-          </article>
-          <article class="projeckt">
-            <div class="projeckt_photo">
-              <img
-                src="../img/img-portfolio/laptopandhands.jpg"
-                alt="ноутбук та рука"
-                class="projeckt-img"
-              />
-            </div>
-            <h3 class="projeckt_title">Growing Business</h3>
-            <p class="things_category">Додаток</p>
-          </article>
-        </div>
       </section>
-    </main>
-    <footer>
-      <a href="#" class="header_logo"
-        ><img src="../img/logo/webstudio_white-logo.jpg" alt="Лого"
-      /></a>
-      <ul class="footer_info">
-        <li>
-          <address class="info_address">
-            м. Київ, пр-т Лесі Українки, 26
-          </address>
-        </li>
-        <li>
-          <a href="mailto:info@devstudio.com" class="info_link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="info_link">+38 096 111 11 11</a>
-        </li>
-      </ul>
-    </footer>
-  </body>
+      <div class="container">
+        <!-- первые 3 -->
+      
+      <div class="projeckts">
+          <article class="projeckt">
+            <div class="projeckt-photo">
+              <img src="../img/img-portfolio/laptop.jpg" alt="ноутбук" class="projeckt-img" />
+            </div>
+            <div class="title-category">
+              <h3 class="projeckt-title">Технокряк</h3>
+              <p class="projeckt-category">Веб-сайт</p>
+            </div>
+          </article>
+
+          <article class="projeckt">
+            <div class="projeckt-photo">
+              <img src="../img/img-portfolio/basketballplayers.jpg" alt="баскетбольні гравці" class="projeckt-img" />
+            </div>
+            <div class="title-category">
+              <h3 class="projeckt-title">Постер New Orlean vs Golden Star</h3>
+              <p class="projeckt-category">Дизайн</p>
+            </div>
+          </article>
+            <article class="projeckt">
+                <div class="projeckt-photo">
+                  <img src="../img/img-portfolio/shark.jpg" alt="Акула" class="projeckt-img" />
+                </div>
+                <div class="title-category">
+                <h3 class="projeckt-title">Ресторан Seafood</h3>
+                <p class="projeckt-category">Додаток</p>
+              </div>
+            </article>
+      
+        <!-- вторые 3 -->
+             <article class="projeckt">
+              <div class="projeckt-photo">
+                <img src="../img/img-portfolio/headphones.jpg" alt="Навушники" class="projeckt-img" />
+              </div>
+              <div class="title-category">
+                <h3 class="projeckt-title">Проєкт Prime</h3>
+                <p class="projeckt-category">Маркетинг</p>
+              </div>
+            </article>
+            <article class="projeckt">
+              <div class="projeckt-photo">
+                <img src="../img/img-portfolio/boxes.jpg" alt="Коробки" class="projeckt-img" />
+              </div>
+              <div class="title-category">
+                <h3 class="projeckt-title">Проєкт Boxes</h3>
+                <p class="projeckt-category">Додаток</p>
+              </div>
+            </article>
+            <article class="projeckt">
+              <div class="projeckt-photo">
+                <img src="../img/img-portfolio/monitor.jpg" alt="монiтор" class="projeckt-img" />
+              </div>
+              <div class="title-category">
+                  <h3 class="projeckt-title">Inspiration has no Borders</h3>
+                  <p class="projeckt-category">Веб-сайт</p>
+                </div>
+            </article>
+         
+            <!-- третие 3 -->
+            <article class="projeckt">
+              <div class="projeckt-photo">
+                <img src="../img/img-portfolio/magazine.jpg" alt="магазин" class="projeckt-img" />
+              </div>
+              <div class="title-category">
+                <h3 class="projeckt-title">Видання Limited Edition</h3>
+                <p class="projeckt-category">Дизайн</p>
+              </div>
+            </article>
+            <article class="projeckt">
+              <div class="projeckt-photo">
+                <img src="../img/img-portfolio/card.jpg" alt="карта" class="projeckt-img" />
+              </div>
+              <div class="title-category">
+                <h3 class="projeckt-title">Проєкт LAB</h3>
+                <p class="projeckt-category">Маркетинг</p>
+              </div>
+            </article>
+            <article class="projeckt">
+              <div class="projeckt-photo">
+                <img src="../img/img-portfolio/laptopandhands.jpg" alt="ноутбук та рука" class="projeckt-img" />
+              </div>
+              <div class="title-category">
+                <h3 class="projeckt-title">Growing Business</h3>
+                <p class="projeckt-category">Додаток</p>
+              </div>
+            </article> 
+        
+      </div>
+    </div>
+  </main>
+</body>
+<footer class="footer">
+  <div class="footer-container">
+  <a href="#" class="footer-logo">
+    <img
+      src="../../src/img/logo/webstudio_white-logo.jpg"
+      alt="Лого"
+      class="logo-img"
+      />
+  </a>
+  <ul class="footer-info-list">
+    <li class="info-item">
+      <address class="info-address">
+        м. Київ, пр-т Лесі Українки, 26
+      </address>
+    </li>
+    <li class="info-item">
+      <a href="mailto:info@devstudio.com" class="info-link"
+        >info@devstudio.com</a
+      >
+    </li>
+    <li class="info-item">
+      <a href="tel:+380961111111" class="info-link">+38 096 111 11 11</a>
+    </li>
+  </ul>
+</div>
+</footer>
 </html>
