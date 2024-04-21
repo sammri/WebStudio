@@ -16,7 +16,7 @@ body {
   font-style: normal;
 }
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -24,17 +24,20 @@ body {
 }
 /* header */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
-.header-container{
+header{
+  border-bottom: 1px solid var(--colorBorder);
+}
+header .container{
+  padding-top: 24px;
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 0px;
-  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 94px;
+  padding-bottom: 25px;
 }
 .header-nav{
   margin-right: 344px;
@@ -75,20 +78,22 @@ body {
 
 /* portfolio*/
 /* ---------------------------------- */
-.portfolio{
-  margin-left: 470px;
-  margin-right: 513px;
+.portfolio.container{
+  margin-left: auto;
+  margin-right: auto;
 }
 .portfolio-filter-list{
+  padding-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.625;
-  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 34px;
-  width: 575px;
-  height: 54px;
+  width: 600px;
+ 
   
 }
 
@@ -154,7 +159,7 @@ body {
   flex-wrap: wrap;
   gap: 29px;
   margin-bottom: 94px;
-  
+
 }
 .projeckt {
   width: 368px;
@@ -169,32 +174,34 @@ body {
 .title-category{
   padding: 20px 24px;
   width: 322px;
-  height: 70px;
+  gap: 4px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-
 .projeckt-title {
   line-height: 2;
   color: var(--colorTextTitle);
   font-weight: 700;
 }
-
 .projeckt-category {
   line-height: 1.875;
   color: var(--colorText);
   font-weight: 400;
 }
 
+
 /* ---------------------------------- */
 
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
-.footer-container{
-  max-width: 1600px;
+
+footer{
   height: 252px;
-  padding-left: 175px;
   background-color: var(--colorBackgroundPrimary);
+}
+footer .container{
+  max-width: 1600px;
+  padding-left: 175px;
 }
 /* footer */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/

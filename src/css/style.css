@@ -22,7 +22,7 @@ body {
   height: 100vh;
 }
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -31,17 +31,17 @@ body {
 /* header */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
 
-.header-container{
+header .container{
+  padding-top: 24px;
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 0px;
-  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
+  padding-bottom: 25px;
 }
 
 .header-nav{
@@ -123,17 +123,16 @@ body {
 /* about */
 /* ---------------------------------- */
 .about{
-  margin-bottom: 105px;
-  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 105px;
 }
 .about-item{
   max-width: 270px;
-  height: 92.76;
 }
 .about-list {
-  width: 1170px;
   list-style: none;
-  max-width: 1142px;
+  max-width: 1200px;
   gap: 30px;
   display: flex;
   flex-direction: row;
@@ -157,11 +156,6 @@ body {
 
 /* services */
 /* ---------------------------------- */
-.services{
-  max-width: 1170px;
-  height: 386px;
-  margin-bottom: 94px;
-}
 .services-title {
   font-size: 36px;
   font-weight: 700;
@@ -175,6 +169,8 @@ body {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  padding-bottom: 94px;
+
 }
 /* ---------------------------------- */
 
@@ -182,7 +178,6 @@ body {
 /* ---------------------------------- */
 .team{
   background-color: var(--colorBackgroundSecondary);
-
 }
 .team-title {
   font-size: 36px;
@@ -191,41 +186,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: start;
-  
   padding-top: 94px;
-  padding-bottom: 90px;
+  padding-bottom: 50px;
 }
 .teammates{
-  max-width: 1170px;
-  height: 368px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
-  padding-left: 175px;
   padding-bottom: 94px;   
 }
 .teammate{
-  width: 270px;
   height: 368px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  column-gap: 30px;
-  padding-bottom: 30px;
   background-color: var(--colorTextContrast);
 
 }
+.teammate-photo {
+  display: flex;
+  align-items: center;
+}
+
 .teammate-img{
   width: 270px;
-  height: 260px;
-  padding-bottom: 30px;
 
 }
 .name-position{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 10px;
   
@@ -234,11 +221,13 @@ body {
   color: var(--colorTextTitle);
   font-weight: 500;
   font-size: 16px;
+  padding-top: 30px;
 }
 .teammate-position {
   color: var(--colorText);
   font-weight: 400;
   font-size: 16px;
+  padding-bottom: 30px;
 }
 
 /* ---------------------------------- */
@@ -246,11 +235,13 @@ body {
 
 /* footer */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
-.footer-container{
-  max-width: 1600px;
+footer{
   height: 252px;
-  padding-left: 175px;
   background-color: var(--colorBackgroundPrimary);
+}
+footer .container{
+  max-width: 1600px;
+  padding-left: 175px;
 }
 /* footer_info */
 /* ---------------------------------- */
