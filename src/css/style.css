@@ -18,8 +18,12 @@
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  width: 100%;
-  height: 100vh;
+  color: var(--colorTextTitle);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.714;
+
+
 }
 .container {
   max-width: 1200px;
@@ -51,10 +55,8 @@ header .container{
 }
 .nav-link,
 .nav-list {
-  font-size: 14px;
   list-style: none;
   text-decoration: none;
-  color: var(--colorTextTitle);
   font-weight: 500;
   display: flex;
   flex-direction: row;
@@ -62,7 +64,6 @@ header .container{
 }
 .contact-link,
 .header-contact {
-  font-size: 14px;
   list-style: none;
   text-decoration: none;
   color: var(--colorText);
@@ -85,14 +86,13 @@ header .container{
 /* ---------------------------------- */
 .hero{
   background-color: var(--colorBackgroundPrimary);
-  max-width: 20000px;
-  height: 600px;
+  display: flex;
+  align-items: center;
+}
+.hero .container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  column-gap: 30px;
-  margin-bottom: 95px;
 }
 .hero-title {
   line-height: 1.363;
@@ -100,19 +100,21 @@ header .container{
   color: var(--colorTextContrast);
   font-weight: 900;
   text-transform: uppercase;
-  width: 696px;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 .hero-button {
   line-height: 1.875;
   background-color: var(--colorHover);
   color: var(--colorTextContrast);
-  font-weight: 700;
   text-decoration: none;
   width: 216px;
   height: 50px;
   border-radius: 4px;
   transition: 0.5s;
+  margin-bottom: 200px;
+  
 }
 .hero-button:hover{
   border-radius: 0px;
@@ -123,16 +125,14 @@ header .container{
 /* about */
 /* ---------------------------------- */
 .about{
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 105px;
 }
-.about-item{
-  max-width: 270px;
+.about-img{
+  padding-bottom: 30px;
+  padding-top: 94px;
 }
 .about-list {
   list-style: none;
-  max-width: 1200px;
   gap: 30px;
   display: flex;
   flex-direction: row;
@@ -141,16 +141,11 @@ header .container{
 
 }
 .about-title {
-  font-size: 14px;
-  color: var(--colorTextTitle);
-  font-weight: 700;
   padding-bottom: 19.38px;
 }
 .about-description {
-  font-size: 14px;
   color: var(--colorText);
   font-weight: 400;
-  line-height: 1.714;
 }
 /* ---------------------------------- */
 
@@ -158,8 +153,6 @@ header .container{
 /* ---------------------------------- */
 .services-title {
   font-size: 36px;
-  font-weight: 700;
-  color: var(--colorTextTitle);
   display: flex;
   justify-content: center;
   align-items: start;
@@ -181,8 +174,6 @@ header .container{
 }
 .team-title {
   font-size: 36px;
-  font-weight: 700;
-  color: var(--colorTextTitle);
   display: flex;
   justify-content: center;
   align-items: start;
@@ -197,7 +188,6 @@ header .container{
   padding-bottom: 94px;   
 }
 .teammate{
-  height: 368px;
   background-color: var(--colorTextContrast);
 
 }
@@ -218,7 +208,6 @@ header .container{
   
 }
 .teammate-name {
-  color: var(--colorTextTitle);
   font-weight: 500;
   font-size: 16px;
   padding-top: 30px;
@@ -236,41 +225,31 @@ header .container{
 /* footer */
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
 footer{
-  height: 252px;
   background-color: var(--colorBackgroundPrimary);
 }
-footer .container{
-  max-width: 1600px;
-  padding-left: 175px;
-}
+
+
 /* footer_info */
 /* ---------------------------------- */
 .logo-img{
-  width: 145px;
-  height: 20px;
-  margin-top: 60px;
-  margin-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.footer-info-list{
+  padding-bottom: 60px;
+
 }
 .footer-info-list li{
-  margin-bottom: 9px;
-  width: 231px;
-}
-.footer-info-list a {
-  list-style: none;
-  text-decoration: none;
+  padding-bottom: 9px;
 }
 .info-address {
   color: var(--colorTextContrast);
-  font-size: 14px;
   font-weight: 400;
-  line-height: 1.714;
   font-style: normal;
 }
 .info-link {
   color: var(--colorTextAdd);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
   font-style: normal;
 }
 /* ---------------------------------- */
