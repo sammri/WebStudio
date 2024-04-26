@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+/* fonts
+roboto-regular - 400; 
+roboto-medium - 500;
+roboto-bold - 700;
+*/
 :root {
   /* Кольори макету */
   /* Текст */
@@ -22,8 +27,6 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.714;
-
-
 }
 .container {
   max-width: 1200px;
@@ -237,7 +240,6 @@ footer{
 }
 .footer-info-list{
   padding-bottom: 60px;
-
 }
 .footer-info-list li{
   padding-bottom: 9px;
