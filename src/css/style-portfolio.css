@@ -38,9 +38,11 @@ header .container{
   justify-content: space-between;
   align-items: center;
 }
-.header-nav{
-  margin-right: 344px;
-  margin-left: 93px;
+.list-contact{
+  gap: 344px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .nav-link,
 .nav-list {
@@ -175,8 +177,7 @@ footer .container{
   margin-bottom: 20px;
 }
 .footer-info-list li{
-  margin-bottom: 9px;
-  width: 231px;
+  padding-bottom: 9px;
 }
 .footer-info-list a {
   list-style: none;

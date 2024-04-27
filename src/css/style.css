@@ -50,11 +50,11 @@ header .container{
   align-items: center;
   padding-bottom: 25px;
 }
-
-.header-nav{
-  margin-right: 344px;
-  margin-left: 93px;
-  
+.list-contact{
+  gap: 344px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .nav-link,
 .nav-list {
