@@ -20,6 +20,9 @@ body {
   color: var(--colorTextTitle);
   font-weight: 700;
   line-height: 1.714;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 14px;
 }
 .container {
   max-width: 1200px;
