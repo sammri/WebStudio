@@ -20,7 +20,7 @@ body {
   font-size: 14px;
 }
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -80,42 +80,35 @@ header .container{
   gap: 8px;
   font-size: 16px;
 }
-
-.filter-item-all{
+.portfolio-filter-list:first{
   padding: 6px 25px;
   font-weight: 500;
-  
 }
-.filter-item-applications, .filter-item-design, .filter-item-marketing,
-.filter-item-websites{
-  padding: 6px 22px;
+
+
+.filter-item{
+  padding: 1px 22px;
   font-weight: 500;
 }
 
 
-.filter-item-all,
-.filter-item-websites, 
-.filter-item-applications,
-.filter-item-design,
-.filter-item-marketing{
+.filter-item{
   background-color: var(--colorBackgroundSecondary);
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 4px;  
 }
 
 /* projeckts */
+
 .projeckts{
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 94px;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 370px);
+  gap: 30px;
+  padding-bottom: 94px;
+  justify-content: center;
 }
 .projeckt {
   border: 1px solid var(--colorBorder); 
-  max-width: 370px;
   height: 404px;
 }
 .title-category{
