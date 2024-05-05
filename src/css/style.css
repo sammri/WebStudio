@@ -33,17 +33,15 @@ body {
 }
 
 /* header */
-header .container{
+header{
   padding-top: 24px;
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 0px;
+  padding-bottom: 25px;
+}
+.header-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding-bottom: 25px;
+  align-items: center; 
 }
 .list-contact{
   gap: 344px;
@@ -51,12 +49,15 @@ header .container{
   flex-direction: row;
   justify-content: space-between;
 }
-.nav-link,
-.nav-list {
-  font-weight: 500;
+.nav-list{
   display: flex;
   flex-direction: row;
   gap: 52px;
+
+}
+ .nav-item{
+  font-weight: 500;
+  
 }
 .contact-link,
 .header-contact {

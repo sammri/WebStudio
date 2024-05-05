@@ -30,10 +30,10 @@ body {
 /* -!-!-!-!-!-!-!-!-!--!-!-!-!-!-!-!-!-!-*/
 header{
   border-bottom: 1px solid var(--colorBorder);
-}
-header .container{
   padding-top: 24px;
   padding-bottom: 25px;
+}
+.header-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -45,12 +45,15 @@ header .container{
   flex-direction: row;
   justify-content: space-between;
 }
-.nav-link,
-.nav-list {
-  font-weight: 500;
+.nav-list{
   display: flex;
   flex-direction: row;
   gap: 52px;
+
+}
+ .nav-item{
+  font-weight: 500;
+  
 }
 .contact-link,
 .header-contact {
