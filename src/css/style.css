@@ -33,7 +33,7 @@ body {
 }
 
 /* header */
-header{
+.header{
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -60,14 +60,14 @@ header{
   font-weight: 500;
   
 }
-.contact-link,
-.header-contact {
+.contact-link{
   color: var(--colorText);
   font-weight: 500;
+}
+.header-contact {
   display: flex;
   flex-direction: row;
   gap: 52px;
-  
 }
 .nav-link:hover,
 .contact-link:hover {
