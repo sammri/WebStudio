@@ -21,31 +21,31 @@
     <header class="header">
       <div class="container header-container">
         <a href="#" class="header-logo"
-          ><img src="./src/img/logo/logo-header.jpg" alt="Лого"
+          ><img src="./src/img/logo/header-logo.svg" alt="Лого"
         /></a>
         <div class="list-contact">
           <nav class="header-nav">
             <ul class="nav-list">
               <li class="nav-item">
-                <a href="#" rel="preconnect" class="nav-link">Home</a>
+                <a href="#" rel="preconnect" class="nav-link">Студія</a>
               </li>
               <li class="nav-item">
-                <a href="src/pages/portfolio.html" rel="preconnect" class="nav-link">Gallery</a>
+                <a href="src/pages/portfolio.html" rel="preconnect" class="nav-link">Портфоліо</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Contacts</a>
+                <a href="#" class="nav-link">Контакти</a>
               </li>
             </ul>
           </nav>
           <ul class="header-contact">
-            <li class="contact-item">
+            <li class="nav-item">
               <a href="mailto:info@devstudio.com" class="contact-link">
-                info@devkostek.com
+                info@devstudio.com
               </a>
             </li>
-            <li class="contact-item">
+            <li class="nav-item">
               <a href="tel:+380961111111" class="contact-link">
-                +48 096 111 111
+                +38 096 111 11 11
               </a>
             </li>
           </ul>
@@ -56,51 +56,142 @@
       <!-- перый блок/ hero -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">RYBY SŁONOWODNE</h1>
+          <h1 class="hero-title">Ефективні рішення для <br>вашого бізнесу</h1>
+          <button class="hero-button">Замовити послугу</button>
         </div>
       </section>
-      <section class="facts">
-        <div class="container">
-          <ol class="facts-icons">
-            <li class="fact-icon"><img src="src/img/icons/fish1.png" alt=""></li>
-            <li class="fact-icon"><img src="src/img/icons/fish2.png" alt=""></li>
-            <li class="fact-icon"><img src="src/img/icons/fish3.jpg" alt=""></li>
-          </ol>
-          <ol class="facts-list">
-            <li class="fakt-item">Adaptacja do słonej wody: Solone ryby posiadają komórki w skrzelach, 
-              które pomagają im regulować poziom soli w organizmie,
-               umożliwiając przetrwanie w wodach o wysokiej zawartości soli.</li>
-            <li class="fakt-item">Różnorodność gatunków: Są one reprezentowane przez liczne gatunki i formy,
-               dostosowane do różnych warunków oceanów, mórz i słodkowodnych zbiorników wodnych.
+   
+      <!-- "про нас/список преимуществ" -->
+        <section class="about">
+      <div class="container">
+          <ul class="about-list">
+              <li class="about-item">
+                <img src="./src/img/about-img/satellite.svg" alt="супутник" class="about-img">
+                <h2 class="about-title">УВАГА ДО ДЕТАЛЕЙ</h2>
+                <p class="about-description">
+                  Ідейні міркування, і навіть початок повсякденної роботи з
+                  формування позиції.
+                </p>
               </li>
-            <li class="fakt-item">Znaczenie ekonomiczne: Solone ryby mają duże znaczenie ekonomiczne jako obiekt połowu, 
-              źródło pożywienia i przedmiot handlu.
-            </li>
-          </ol>
+              
+              <li class="about-item">
+                <img src="./src/img/about-img/clock.svg" alt="годинник" class="about-img">
+                <h2 class="about-title">ПУНКТУАЛЬНІСТЬ</h2>
+                <p class="about-description">
+                  Завдання організації, особливо рамки і місце навчання кадрів тягне
+                  у себе.
+                </p>
+              </li>
+                <li class="about-item">
+                  <img src="./src/img/about-img/computer.svg" alt="комп'ютер" class="about-img">
+                  <h2 class="about-title">ПЛАНУВАННЯ</h2>
+                  <p class="about-description">
+                    Так само консультація з широким активом значною мірою зумовлює.
+                  </p>
+                </li>
+                <li class="about-item">
+                  <img src="./src/img/about-img/astronaut.svg" alt="космонафт" class="about-img">
+                  <h2 class="about-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+                  <p class="about-description">
+                    Значимість цих проблем настільки очевидна, що реалізація планових
+                    завдань.
+                  </p>
+                </li>
+          </ul>  
         </div>
       </section>
-      <section class="fishermen">
-        <div class="container">
-          <div class="fishermen-photo">
-            <ol class="photo-list">
-              <li class="photo-item"><img src="src/img/info-img/img-man.jpg" alt="man">
-              Oleg Majami <br> 2mejsce</li>
-              <li class="photo-item"><img src="src/img/info-img/fishermen.jpg" alt="udoczki">
-              Dimasos Ponomarev <br>1mejsce</li>
-              <li class="photo-item"><img src="src/img/info-img/brakon.jpg" alt="brakon">
-               Sasunok Ogurcik <br>3mejsce</li>
-            </ol>
+    
+
+      <!-- чем занимаемся/картинки рабочего стола -->
+      <section class="services">
+      <div class="container">
+        <h2 class="services-title">Чим ми займаємося</h2>
+        <div class="services-cards">
+          <div class="services-card">
+            <img
+              class="services-img"
+              src="./src/img/class/algorithm.jpg"
+              alt="малюнок з алгоритмом на аркуші паперу"
+            />
           </div>
-         
+          <div class="services-card">
+            <img
+              class="services-img"
+              src="./src/img/class/phone.jpg"
+              alt="зображення руки з телефоном"
+            />
+          </div>
+          <div class="services-card">
+            <img
+              class="services-img"
+              src="./src/img/class/spectrum.jpg"
+              alt="колірний спектр"
+            />
+          </div>
         </div>
+      </div>
       </section>
-      
+      <!-- Наша команда -->
+      <section class="team">
+        <div class="container">
+        <h2 class="team-title">Наша команда</h2>
+        <div class="teammates">
+          <!-- первый -->
+          <article class="teammate">
+            <div class="teammate-photo">
+              <img
+                src="./src/img/team/product.jpg"
+                alt="Ігор"
+                class="teammate-img"
+              />
+            </div>
+            <div class="name-position">
+              <h2 class="teammate-name">Ігор Дем'яненко</h2>
+             <p class="teammate-position">Product Designer</p>
+            </div>
+          </article>
+
+          <!-- второй -->
+          <article class="teammate">
+            <div class="teammate-photo">
+              <img src="./src/img/team/frontend.jpg" alt="Ольга" class="teammate-img"/>
+            </div>
+            <div class="name-position">
+              <h2 class="teammate-name">Ольга Рєпіна</h2>
+              <p class="teammate-position">Frontend Developer</p>
+            </div>
+          </article>
+
+          <!-- третий -->
+          <article class="teammate">
+            <div class="teammate-photo">
+              <img src="./src/img/team/marketing.jpg" alt="Микола" class="teammate-img"/>
+            </div>
+            <div class="name-position">
+              <h2 class="teammate-name">Микола Тарасов</h2>
+              <p class="teammate-position">Marketing</p>
+          </div>
+          </article>
+
+          <!-- четвертый -->
+          <article class="teammate">
+            <div class="teammate-photo">
+              <img src="./src/img/team/ui.jpg" alt="Михайло" class="teammate-img"/>
+            </div>
+            <div class="name-position">
+              <h2 class="teammate-name">Михайло Єрмаков</h2>
+              <p class="teammate-position">UI Designer</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      </section>
     </main>
-    <footer class="footer">
+    <footer>
       <div class="container">
         <a href="#" class="footer-logo">
           <img
-            src="./src/img/logo/logo-footer.jpg"
+            src="./src/img/logo/footer-logo.svg"
             alt="Лого"
             class="logo-img"
             />
@@ -108,16 +199,16 @@
         <ul class="footer-info-list">
           <li class="info-item">
             <address class="info-address">
-              Jaroslaw ul.Rejmonta 1
+              м. Київ, пр-т Лесі Українки, 26
             </address>
           </li>
           <li class="info-item">
             <a href="mailto:info@devstudio.com" class="info-link"
-              >info@devkostek.com</a
+              >info@devstudio.com</a
             >
           </li>
           <li class="info-item">
-            <a href="tel:+380961111111" class="info-link">+48 096 111 111</a>
+            <a href="tel:+380961111111" class="info-link">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>

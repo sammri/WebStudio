@@ -34,8 +34,8 @@ body {
 
 /* header */
 header{
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header-container{
   display: flex;
@@ -43,9 +43,7 @@ header{
   justify-content: space-between;
   align-items: center; 
 }
-.header-logo img{
-  width: 120px;
-}
+
 .list-contact{
   gap: 344px;
   display: flex;
@@ -80,14 +78,15 @@ header{
 
 /* hero */
 .hero{
-  background-image: url(../img/hero-img/edzenie.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: var(--colorBackgroundPrimary);
   display: flex;
   align-items: center;
 }
-
+.hero .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .hero-title {
   line-height: 1.363;
   font-size: 44px;
@@ -96,8 +95,7 @@ header{
   text-transform: uppercase;
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 200px;
-  color: #000000;
+  padding-bottom: 30px;
 }
 .hero-button {
   line-height: 1.875;
@@ -115,69 +113,105 @@ header{
   transition: 0.5s;
 }
 
-
-.facts-icons{
-  padding-top: 50px;
+/* about */
+.about{
+  padding-bottom: 105px;
+}
+.about-img{
+  padding-bottom: 30px;
+  padding-top: 94px;
+}
+.about-list {
+  gap: 30px;
   display: flex;
   flex-direction: row;
-  gap: 178px;
+  justify-content: flex-start;
+  align-items: start;
+
 }
-.fact-icon img{
-  width: 100px;
-  height: 100px;
-  
+.about-title {
+  padding-bottom: 19.38px;
 }
-.fact-icon{
-  padding-left:120px;
+.about-description {
+  color: var(--colorText);
+  font-weight: 400;
 }
 
-.facts-list{
-  padding-top: 10px;
+/* services */
+.services-title {
+  font-size: 36px;
   display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-.fakt-item{
-  max-width: 350px;
-  height: 200px;
-
-}
-
-
-
-
-.fishermen{
-  display: flex;
-  flex-direction: column;
-  padding-top: 80px;
-  background-color: #f5f4fa;
-}
-.photo-list{
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
+  justify-content: center;
+  align-items: start;
   padding-bottom: 50px;
 }
-.photo-item{
-  border: 1px solid #c2c2c2;
-  text-align: center;
-}
-.photo-item img{
-  width:380px;
-  height: 300px;
+.services-cards{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-bottom: 94px;
+
 }
 
+/* team */
+.team{
+  background-color: var(--colorBackgroundSecondary);
+}
+.team-title {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.teammates{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  padding-bottom: 94px;   
+}
+.teammate{
+  background-color: var(--colorTextContrast);
+
+}
+.teammate-photo {
+  display: flex;
+  align-items: center;
+}
+
+.teammate-img{
+  width: 270px;
+
+}
+.name-position{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  
+}
+.teammate-name {
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 30px;
+}
+.teammate-position {
+  color: var(--colorText);
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 30px;
+}
 
 
 /* footer */
 footer{
   background-color: var(--colorBackgroundPrimary);
 }
-
 .logo-img{
   padding-top: 60px;
   padding-bottom: 20px;
-  width: 120px;
 }
 .footer-info-list{
   padding-bottom: 60px;
