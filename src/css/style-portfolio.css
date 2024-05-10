@@ -73,13 +73,12 @@ body {
 /* portfolio*/
 .portfolio-filter-list{
   padding-top: 94px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 50px;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-bottom: 34px;
   gap: 8px;
   font-size: 16px;
 }
@@ -90,15 +89,17 @@ body {
 
 
 .filter-item{
-  padding: 1px 22px;
-  font-weight: 500;
-}
-
-
-.filter-item{
+  padding: 5px 22px;
   background-color: var(--colorBackgroundSecondary);
-  text-align: center;
   border-radius: 4px;  
+}
+.filter-link{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
 }
 
 /* projeckts */
@@ -106,13 +107,19 @@ body {
 .projeckts{
   display: grid;
   grid-template-columns: repeat(auto-fill, 370px);
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 30px;
   padding-bottom: 94px;
   justify-content: center;
+}
+.projeckt:nth-child(1){
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
 }
 .projeckt {
   border: 1px solid var(--colorBorder); 
   height: 404px;
+  
 }
 .title-category{
   padding: 20px 20px;
@@ -142,10 +149,11 @@ footer{
 }
 .footer-info-list{
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
-.footer-info-list li{
-  padding-bottom: 9px;
-}
+
 .info-address {
   color: var(--colorTextContrast);
   font-weight: 400;
