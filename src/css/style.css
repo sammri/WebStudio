@@ -79,6 +79,8 @@ body {
 /* hero */
 .hero{
   background-color: var(--colorBackgroundPrimary);
+  padding-top: 200px;
+  padding-bottom: 200px; 
  
 }
 .hero-container{
@@ -94,7 +96,6 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 200px;
 }
 .hero-button {
   line-height: 1.875;
@@ -104,7 +105,6 @@ body {
   height: 50px;
   border-radius: 4px;
   transition: 0.5s;
-   margin-bottom: 200px; /*??????????????????????????????????? */
 }
 .hero-button:hover{
   border-radius: 0px;
@@ -112,10 +112,12 @@ body {
 }
 
 /* about */
+.about{
+  padding-top: 94px;
 
+}
 .about-img{
   padding-bottom: 30px;
-  padding-top: 94px;
 }
 .about-list {
   gap: 30px;
@@ -134,8 +136,12 @@ body {
 }
 
 /* services */
-.services-title {
+.services{
   padding-top: 94px;
+  padding-bottom: 94px;
+
+}
+.services-title {
   padding-bottom: 50px;
   font-size: 36px;
   display: flex;
@@ -146,16 +152,17 @@ body {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  padding-bottom: 94px;
 
 }
 
 /* team */
 .team{
   background-color: var(--colorBackgroundSecondary);
+  padding-top: 94px;
+  padding-bottom: 94px;
+
 }
 .team-title {
-  padding-top: 94px;
   padding-bottom: 50px;
   font-size: 36px;
   display: flex;
@@ -164,7 +171,6 @@ body {
   
 }
 .teammates{
-  padding-bottom: 94px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -209,13 +215,14 @@ body {
 /* footer */
 footer{
   background-color: var(--colorBackgroundPrimary);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
 }
 .logo-img{
-  padding-top: 60px;
   padding-bottom: 20px;
 }
 .footer-info-list{
-  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   gap: 9px;

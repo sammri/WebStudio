@@ -71,8 +71,12 @@ body {
 
 /* main */
 /* portfolio*/
-.portfolio-filter-list{
+.portfolio{
   padding-top: 94px;
+  padding-bottom: 94px;
+
+}
+.portfolio-filter-list{
   padding-bottom: 50px;
 
   display: flex;
@@ -109,20 +113,24 @@ body {
   grid-template-columns: repeat(auto-fill, 370px);
   column-gap: 30px;
   row-gap: 30px;
-  padding-bottom: 94px;
   justify-content: center;
 }
-.projeckt:nth-child(1){
+.projeckt:hover{
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   background: #fff;
+  border-radius: 4px;
+  transition: 0.3s;
+
+
 }
 .projeckt {
   border: 1px solid var(--colorBorder); 
-  height: 404px;
+  max-width: 370px;
+  transition: 0.3s;
   
 }
 .title-category{
-  padding: 20px 20px;
+  padding: 20px 24px;
   gap: 4px;
   display: flex;
   flex-direction: column;
@@ -138,17 +146,21 @@ body {
   color: var(--colorText);
   font-size: 16px;
 }
+.projeckt-img{
+  max-width: 369px;
+}
 
 /* footer */
 footer{
   background-color: var(--colorBackgroundPrimary);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
 }
 .logo-img{
-  padding-top: 60px;
   padding-bottom: 20px;
 }
 .footer-info-list{
-  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   gap: 9px;
