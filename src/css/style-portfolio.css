@@ -157,8 +157,9 @@ footer{
   padding-bottom: 60px;
 
 }
+
 .logo-img{
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .footer-info-list{
   display: flex;

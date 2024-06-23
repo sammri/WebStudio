@@ -43,7 +43,9 @@ body {
   justify-content: space-between;
   align-items: center; 
 }
-
+.logo-header-img{
+  
+}
 .list-contact{
   gap: 344px;
   display: flex;
@@ -112,33 +114,41 @@ body {
 }
 
 /* about */
-.about{
+.about {
   padding-top: 94px;
+}
 
+.svg-about {
+
+  background-color: #F5F4FA;
 }
-.about-img{
-  padding-bottom: 30px;
-}
+
+
+
 .about-list {
   gap: 30px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: start;
-
 }
+
 .about-title {
+  padding-top: 30px;
   padding-bottom: 10px;
 }
+
 .about-description {
   color: var(--colorText);
   font-weight: 400;
 }
 
+
+
 /* services */
 .services{
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 94px;
+  margin-bottom: 94px;
 
 }
 .services-title {
@@ -158,8 +168,8 @@ body {
 /* team */
 .team{
   background-color: var(--colorBackgroundSecondary);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 94px;
+  margin-bottom: 94px;
 
 }
 .team-title {
@@ -220,7 +230,10 @@ footer{
 
 }
 .logo-img{
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.logo-footer-img{
+  background-color: var(--colorBackgroundPrimary);
 }
 .footer-info-list{
   display: flex;
