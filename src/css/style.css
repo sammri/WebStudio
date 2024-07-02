@@ -368,7 +368,10 @@ footer{
   border-radius: 50%;
   background-color: #afb1b82a;
 }
-
+.footer-social_network{
+  position: relative;
+  bottom: 40px;
+}
 .footer-icon{
   width: 20px;
   height: 20px;
@@ -379,9 +382,5 @@ footer{
   background-color: var(--colorHover);
   border-radius: 50%;
 } 
-
-.footer-block-icon:hover .footer-icon{
-  fill: #fff;
-}
 
 
