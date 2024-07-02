@@ -14,6 +14,7 @@ roboto-bold - 700;
   /* Фон */
   --colorBackgroundPrimary: #2f303a;
   --colorBackgroundSecondary: #f5f4fa;
+  --colorSVG: #AFB1B8;
 }
 
 body {
@@ -118,8 +119,8 @@ body {
   line-height: 1.875;
   background-color: var(--colorHover);
   color: var(--colorTextContrast);
-  width: 216px;
-  height: 50px;
+  padding: 10px 32px;
+  font-size: 16px;
   border-radius: 4px;
   transition: 0.5s;
 }
@@ -162,8 +163,8 @@ body {
 
 /* services */
 .services{
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
 }
 .services-title {
@@ -245,7 +246,7 @@ body {
 .teem-icon {
   width: 20px;
   height: 20px;
-  fill: #AFB1B8;
+  fill: var(--colorSVG);
   transition: background-color 0.3s, fill 0.3s;
 }
 
@@ -279,6 +280,46 @@ body {
 }
 
 
+.clients{
+  
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title{
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom:  50px;
+}
+.clients-cards{
+  display: flex;
+  gap: 30px;
+}
+.clients-card{
+  padding: 22px 54px;
+  border: 1px solid var(--colorSVG);
+  border-radius: 4px;
+  transition: 0.3s;
+
+}
+
+.clients-card:hover{
+  border: 1px solid var(--colorHover);
+  transition: 0.3s;
+
+}
+.clients-card:hover .clients-icon{
+  fill: var(--colorHover);
+  transition: 0.3s;
+}
+
+
+.clients-icon{
+  width: 65px; 
+  height: 50px;
+  transition: 0.3s;
+  fill: var(--colorSVG);
+}
 
 /* footer */
 footer{
@@ -292,7 +333,6 @@ footer{
 }
 .footer-lists{
   display: flex;
-  flex-direction: row;
   gap: 70px;
 }
 .footer-info-list{
@@ -319,7 +359,7 @@ footer{
   justify-content: center;
   gap: 10px;
 }
-.block-icon {
+.footer-block-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,12 +375,12 @@ footer{
   fill: var(--colorTextContrast);
   transition: background-color 0.3s, fill 0.3s;
 }
-.block-icon:hover {
+.footer-block-icon:hover {
   background-color: var(--colorHover);
   border-radius: 50%;
 } 
 
-.block-icon:hover .footer-icon{
+.footer-block-icon:hover .footer-icon{
   fill: #fff;
 }
 
