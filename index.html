@@ -40,11 +40,17 @@
           <ul class="header-contact">
             <li class="contact-item">
               <a href="mailto:info@devstudio.com" class="contact-link">
+                <svg width="106" height="60" class="contact-icon">
+                  <use href="./src/img/header-icons/symbol-defs.svg#icon-envelope"></use>
+                </svg>
                 info@devstudio.com
               </a>
             </li>
             <li class="contact-item">
               <a href="tel:+380961111111" class="contact-link">
+                <svg width="106" height="60" class="contact-icon">
+                  <use href="./src/img/header-icons/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
                 +38 096 111 11 11
               </a>
             </li>
@@ -106,33 +112,37 @@
 
       <!-- чем занимаемся/картинки рабочего стола -->
       <section class="services">
-      <div class="container">
-        <h2 class="services-title">Чим ми займаємося</h2>
-        <div class="services-cards">
-          <div class="services-card">
-            <img
-              class="services-img"
-              src="./src/img/class/algorithm.jpg"
-              alt="малюнок з алгоритмом на аркуші паперу"
-            />
-          </div>
-          <div class="services-card">
-            <img
-              class="services-img"
-              src="./src/img/class/phone.jpg"
-              alt="зображення руки з телефоном"
-            />
-          </div>
-          <div class="services-card">
-            <img
-              class="services-img"
-              src="./src/img/class/spectrum.jpg"
-              alt="колірний спектр"
-            />
+        <div class="container">
+          <h2 class="services-title">Чим ми займаємося</h2>
+          <div class="services-cards">
+            <article class="service-card">
+              <img
+                class="services-img"
+                src="./src/img/class/algorithm.jpg"
+                alt="малюнок з алгоритмом на аркуші паперу"
+              />
+              <h2 class="service-card-title">Десктопні додатки</h2>
+            </article>
+            <article class="service-card">
+              <img
+                class="services-img"
+                src="./src/img/class/phone.jpg"
+                alt="зображення руки з телефоном"
+              />
+              <h2 class="service-card-title">Мобільні додатки</h2>
+            </article>
+            <article class="service-card">
+              <img
+                class="services-img"
+                src="./src/img/class/spectrum.jpg"
+                alt="колірний спектр"
+              />
+              <h2 class="service-card-title">Дизайнерські рішення</h2>
+            </article>
           </div>
         </div>
-      </div>
       </section>
+      
       <!-- Наша команда -->
       <section class="team">
         <div class="container">
