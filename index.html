@@ -14,6 +14,7 @@
   integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" 
   crossorigin="anonymous" referrerpolicy="no-referrer" 
   />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
@@ -39,7 +40,7 @@
           </nav>
           <ul class="header-contact">
             <li class="contact-item">
-              <a href="mailto:info@devstudio.com" class="contact-link">
+              <a href="#" class="contact-link" data-modal-open>
                 <svg width="106" height="60" class="contact-icon">
                   <use href="./src/img/header-icons/symbol-defs.svg#icon-envelope"></use>
                 </svg>
@@ -47,7 +48,7 @@
               </a>
             </li>
             <li class="contact-item">
-              <a href="tel:+380961111111" class="contact-link">
+              <a href="#" class="contact-link" data-modal-open>
                 <svg width="106" height="60" class="contact-icon">
                   <use href="./src/img/header-icons/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
@@ -331,7 +332,7 @@
         <a href="#" class="footer-logo">
           <img src="./src/img/logo/logo-footer.webp" alt="logo-footer" class="footer-logo">
        </a>
-      </a>
+      
       <div class="footer-lists">
       <ul class="footer-info-list">
         <li class="info-item">
@@ -381,6 +382,55 @@
     </div>  
     </div>
     </footer>
-  </body>
+    
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+          <button class="btn-close btn" data-modal-close>Close</button>
+          <div class="modal-content">
+            <h3 class="modal-title">
+              Залиште свої дані, ми вам передзвонимо
+            </h3>
+            <form class="modal-inputs">
+              <div class="input-block">
+                <p class="input-title">
+                  Ім'я
+                </p>
+                <input type="text" class="modal-input">
+              </div>
+              <div class="input-block">
+                <p class="input-title">
+                  Телефон
+                </p>
+                <input type="number" class="modal-input">
+              </div>
+              <div class="input-block">
+                <p class="input-title">
+                  Пошта
+                </p>
+                <input type="text" class="modal-input">
+              </div>
+              <div class="input-block">
+                <p class="input-title">
+                  Коментар
+                </p>
+                <input type="text" class="modal-input" placeholder="Введіть текст">
+              </div>
+              
+            </form>
+
+            <div class="block-checkbox">
+              <input type="checkbox" class="input-checkbox"><p class="checkbox-text">Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox-link">Умови договору</a></p>
+            </div>
+
+            <div class="block-button">
+            <button class="modal-send-button" type="submit">Відправити</button>
+          </div>
+          </div>
+
+          </div>
+      </div>
+
+      <script src="./src/js/modal.js"></script>
+    </body>
   </html>
 
