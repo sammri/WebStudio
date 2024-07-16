@@ -481,10 +481,11 @@ footer{
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 0.2s; 
+  padding-left: 30px;
 }
 .modal-inputs .input-block:nth-of-type(4) .modal-input {
   height: 120px;  
-  padding: 12px 16px;
+  padding: 12px 16px 90px 15px;
 }
 .modal-inputs .input-block:nth-of-type(4) .modal-input::placeholder {
   position: absolute;
@@ -510,11 +511,27 @@ footer{
   font-size: 16px;
   margin-top: 30px;
 }
+.input-block{
+  position: relative;
+}
+.input-block svg{
+  position: absolute;
+  top: 55%;
+  left: 10px;
+  width: 12px;
+  height: 12px;
+  fill: var(--colorTextTitle);
+}
 
 .btn-close {
   position: absolute;
   right: 10px;
   top: 10px;
+  background: none;
+}
+.btn-close svg{
+  width: 30px;
+  height: 30px;
 }
 .checkbox-text{
   font-weight: 400;
@@ -527,7 +544,6 @@ footer{
  display: flex;
  flex-direction: row;
  gap: 8.38px;
- padding-left: 12px;
  margin-top: 25px;
 }
 .no-scroll {

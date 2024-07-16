@@ -385,7 +385,11 @@
     
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-          <button class="btn-close btn" data-modal-close>Close</button>
+          <button class="btn-close btn" data-modal-close>
+              <svg width="20" height="20" viewBox="0 0 20 20" class="modal-icon">
+                <use href="./src/img/modal-icons/close-icon/symbol-defs.svg#icon-closebtn"></use>
+              </svg>
+          </button>
           <div class="modal-content">
             <h3 class="modal-title">
               Залиште свої дані, ми вам передзвонимо
@@ -396,18 +400,27 @@
                   Ім'я
                 </p>
                 <input type="text" class="modal-input">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="input-icon">
+                  <use href="./src/img/modal-icons/input-icons/symbol-defs.svg#icon-user"></use>
+                </svg>
               </div>
               <div class="input-block">
-                <p class="input-title">
+                <p class="input-title"> 
                   Телефон
                 </p>
                 <input type="number" class="modal-input">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="input-icon">
+                  <use href="./src/img/modal-icons/input-icons/symbol-defs.svg#icon-phone"></use>
+                </svg>
               </div>
               <div class="input-block">
                 <p class="input-title">
                   Пошта
                 </p>
                 <input type="text" class="modal-input">
+                <svg width="20" height="20" viewBox="0 0 20 20" class="input-icon">
+                  <use href="./src/img/modal-icons/input-icons/symbol-defs.svg#icon-envelope"></use>
+                </svg>
               </div>
               <div class="input-block">
                 <p class="input-title">
@@ -415,12 +428,11 @@
                 </p>
                 <input type="text" class="modal-input" placeholder="Введіть текст">
               </div>
-              
             </form>
 
-            <div class="block-checkbox">
+            <label class="block-checkbox">
               <input type="checkbox" class="input-checkbox"><p class="checkbox-text">Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox-link">Умови договору</a></p>
-            </div>
+            </label>
 
             <div class="block-button">
             <button class="modal-send-button" type="submit">Відправити</button>
