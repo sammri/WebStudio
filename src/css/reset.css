@@ -84,7 +84,10 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
+input{
+  border: none;
+  outline: none;
+}
 ol,
 ul {
   list-style: none;

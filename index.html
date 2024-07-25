@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="icon" type="image/png" href="./src/img/ico/ico.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -116,30 +117,30 @@
         <div class="container">
           <h2 class="services-title">Чим ми займаємося</h2>
           <div class="services-cards">
-            <article class="service-card">
+            <figure class="service-card">
               <img
                 class="services-img"
                 src="./src/img/class/algorithm.jpg"
                 alt="малюнок з алгоритмом на аркуші паперу"
               />
-              <h2 class="service-card-title">Десктопні додатки</h2>
-            </article>
-            <article class="service-card">
+              <figcaption class="service-card-title">Десктопні додатки</figcaption>
+            </figure>
+            <figure class="service-card">
               <img
                 class="services-img"
                 src="./src/img/class/phone.jpg"
                 alt="зображення руки з телефоном"
               />
-              <h2 class="service-card-title">Мобільні додатки</h2>
-            </article>
-            <article class="service-card">
+              <figcaption class="service-card-title">Мобільні додатки</figcaption>
+            </figure>
+            <figure class="service-card">
               <img
                 class="services-img"
                 src="./src/img/class/spectrum.jpg"
                 alt="колірний спектр"
               />
-              <h2 class="service-card-title">Дизайнерські рішення</h2>
-            </article>
+              <figcaption class="service-card-title">Дизайнерські рішення</figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -400,63 +401,55 @@
     
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-          <button class="btn-close btn" data-modal-close>
-              <svg width="20" height="20" viewBox="0 0 20 20" class="modal-icon">
-                <use href="./src/img/modal-icons/close-icon/symbol-defs.svg#icon-closebtn"></use>
-              </svg>
-          </button>
-          <div class="modal-content">
-            <h3 class="modal-title">
-              Залиште свої дані, ми вам передзвонимо
-            </h3>
-            <form class="modal-inputs">
-              <div class="input-block">
-                <p class="input-title">
-                  Ім'я
-                </p>
-                <input type="text" class="modal-input">
+        <button class="btn-close btn" data-modal-close>
+          <svg width="20" height="20" viewBox="0 0 20 20" class="modal-icon">
+            <use href="./src/img/modal-icons/close-icon/symbol-defs.svg#icon-closebtn"></use>
+          </svg>
+        </button>
+        <div class="modal-content">
+          <h3 class="modal-title">
+            Залиште свої дані, ми вам передзвонимо
+          </h3>
+          <form class="contact-form" novalidate>
+            <div class="form-group">
+              <div class="group-input">
+                <label class="form-label">Ім'я</label>
+                <input type="text" class="form-input" minlength="2" required>
                 <svg width="20" height="20" viewBox="0 0 20 20" class="input-icon">
                   <use href="./src/img/modal-icons/input-icons/symbol-defs.svg#icon-user"></use>
                 </svg>
               </div>
-              <div class="input-block">
-                <p class="input-title"> 
-                  Телефон
-                </p>
-                <input type="number" class="modal-input">
+              <div class="group-input">
+                <label class="form-label">Телефон</label>
+                <input type="tel" class="form-input" pattern="\d*" required>
                 <svg width="20" height="20" viewBox="0 0 20 20" class="input-icon">
                   <use href="./src/img/modal-icons/input-icons/symbol-defs.svg#icon-phone"></use>
                 </svg>
               </div>
-              <div class="input-block">
-                <p class="input-title">
-                  Пошта
-                </p>
-                <input type="text" class="modal-input">
+              <div class="group-input">
+                <label class="form-label">Пошта</label>
+                <input type="email" class="form-input" required>
                 <svg width="20" height="20" viewBox="0 0 20 20" class="input-icon">
                   <use href="./src/img/modal-icons/input-icons/symbol-defs.svg#icon-envelope"></use>
                 </svg>
               </div>
-              <div class="input-block">
-                <p class="input-title">
-                  Коментар
-                </p>
-                <input type="text" class="modal-input" placeholder="Введіть текст">
+              <div class="group-input">
+                <label class="form-label">Коментар</label>
+                <textarea class="form-input" placeholder="Введіть текст"></textarea>
               </div>
-            </form>
-
-            <label class="block-checkbox">
-              <input type="checkbox" class="input-checkbox"><p class="checkbox-text">Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox-link">Умови договору</a></p>
-            </label>
-
-            <div class="block-button">
-            <button class="modal-send-button" type="submit">Відправити</button>
-          </div>
-          </div>
-
-          </div>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" id="subscription" class="input-checkbox" required>
+              <label for="subscription" class="label-checkbox">Погоджуюся з розсилкою та приймаю <a href="https://web-studio.kiev.ua/dogovir-pro-umovy-ta-pravyla-vykorystannya-sajtu/" target="_blank" class="checkbox-link">Умови договору</a></label>
+            </div>
+            <div class="form-submit">
+              <button class="send-submit" type="submit">Відправити</button>
+            </div>
+          </form>
+        </div>
       </div>
-
+    </div>
+    
       <script src="./src/js/modal.js"></script>
     </body>
   </html>
