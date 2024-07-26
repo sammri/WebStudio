@@ -544,6 +544,11 @@ footer{
   transition: border-color 0.2s; 
   padding: 1px 42px;
 }
+#user-phone::-webkit-inner-spin-button,
+#user-phone::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+}
+
 .contact-form .group-input:nth-of-type(4) .form-input {
   height: 120px;  
   padding: 12px 16px 90px 15px;
@@ -576,6 +581,7 @@ footer{
   font-weight: 700;
   font-size: 16px;
   margin-top: 30px;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
 }
 .group-input{
   position: relative;
