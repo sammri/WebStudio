@@ -537,8 +537,12 @@ footer{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 99;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden{
@@ -546,18 +550,23 @@ footer{
   pointer-events: none;
 }
 
-.modal {
-  background-color: var(--colorTextContrast);
+.backdrop .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
+  width: 528px; 
   min-height: 581px;
-  transform: translate(-50%, -50%);
-  padding:  40px;
+  transform: translate(-50%, -50%) perspective(2500px) rotateY(0);
+  padding: 40px;
   border-radius: 4px;
-  
-  
+  background-color: var(--colorTextContrast);
+  transition-property: transform;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-150%, -50%) perspective(2500px) rotateY(-90deg);
 }
 
 .modal-content {
@@ -565,22 +574,20 @@ footer{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  
-
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-
 }
+
 .form-group{
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .modal-title {
   text-align: center;
   margin-bottom: 12px;
@@ -603,6 +610,7 @@ footer{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 1px 42px;
 }
+
 #user-phone::-webkit-inner-spin-button,
 #user-phone::-webkit-outer-spin-button{
   -webkit-appearance: none;
@@ -614,6 +622,7 @@ footer{
   font-size: 12px; 
   resize: none;
 }
+
 .contact-form .group-input:nth-of-type(4) .form-input::placeholder {
   position: absolute;
   top: 20px; 
@@ -627,6 +636,7 @@ footer{
   border-color: rgb(33, 150, 243); 
   outline: none; 
 }
+
 .form-input:hover {
   border-color: rgb(33, 150, 243); 
   outline: none; 
@@ -642,11 +652,13 @@ footer{
   margin-top: 30px;
   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.3);
 }
+
 .group-input{
   position: relative;
   display: flex;
   flex-direction: column;
 }
+
 .group-input svg{
   position: absolute;
   top: 55%;
@@ -669,13 +681,15 @@ footer{
   transition: transform 0.25s ease; 
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .btn-close:hover{
   fill: var(--colorHover);
 }
+
 .btn-close:hover svg {
   transform: rotate(360deg); 
-  
 }
+
 .label-checkbox{
   font-weight: 400;
 }
@@ -684,13 +698,14 @@ footer{
   color: var(--colorHover);
   text-decoration: underline;
 }
+
 .form-checkbox{
- display: flex;
- flex-direction: row;
- gap: 8.38px;
- margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 8.38px;
+  margin-top: 25px;
 }
+
 .no-scroll {
   overflow: hidden;
 }
-
