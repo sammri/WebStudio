@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="uk">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="icon" type="image/png" href="./src/img/ico/ico.png">
+  <!-- ICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/png" href="./src/img/ico/ico-removebg-preview.png">
+ 
+  <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    
+  <!-- ANIMATE -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
   integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" 
-  crossorigin="anonymous" referrerpolicy="no-referrer" 
-  />
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./src/css/reset.css" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-  </head>
-  <body>
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./src/css/reset.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  
+</head>
+ 
+<body>
     <header class="header">
       <div class="container header-container">
         <a href="#" class="header-logo">
@@ -70,11 +77,11 @@
       </section>
    
       <!-- "про нас/список преимуществ" -->
-        <section class="about">
+        <section class="about" data-aos="fade-up">
       <div class="container">
           <ul class="about-list">
               <li class="about-item">
-                <img src="./src/img/about-img/antenna.webp" alt="antenna" class="img-about">
+                <img src="./src/img/about-img/antenna.webp" alt="antenna" class="img-about"  >
                 <h2 class="about-title">УВАГА ДО ДЕТАЛЕЙ</h2>
                 <p class="about-description">
                   Ідейні міркування, і навіть початок повсякденної роботи з
@@ -83,7 +90,7 @@
               </li>
               
               <li class="about-item">
-                <img src="./src/img/about-img/clock.webp" alt="clock" class="img-about"> 
+                <img src="./src/img/about-img/clock.webp" alt="clock" class="img-about" > 
                 <h2 class="about-title">ПУНКТУАЛЬНІСТЬ</h2>
                 <p class="about-description">
                   Завдання організації, особливо рамки і місце навчання кадрів тягне
@@ -91,7 +98,7 @@
                 </p>
               </li>
                 <li class="about-item">
-                  <img src="./src/img/about-img/diagram.webp" alt="diagram" class="img-about">
+                  <img src="./src/img/about-img/diagram.webp" alt="diagram" class="img-about" >
                   <h2 class="about-title">ПЛАНУВАННЯ</h2>
                   <p class="about-description">
                     Так само консультація з широким активом значною мірою зумовлює.
@@ -151,7 +158,7 @@
           <h2 class="team-title">Наша команда</h2>
           <div class="teammates">
             <!-- первый -->
-            <article class="teammate">
+            <article class="teammate" >
               <div class="teammate-photo">
                 <img src="./src/img/team/product.jpg" alt="Ігор" class="teammate-img" />
               </div>
@@ -185,7 +192,7 @@
             
       
             <!-- второй -->
-            <article class="teammate">
+            <article class="teammate" >
               <div class="teammate-photo">
                 <img src="./src/img/team/frontend.jpg" alt="Ольга" class="teammate-img"/>
               </div>
@@ -251,7 +258,7 @@
             </article>
       
             <!-- четвертый -->
-            <article class="teammate">
+            <article class="teammate" >
               <div class="teammate-photo">
                 <img src="./src/img/team/ui.jpg" alt="Михайло" class="teammate-img"/>
               </div>
@@ -286,7 +293,7 @@
         </div>
       </section>
       
-      <section class="clients">
+      <section class="clients" data-aos="zoom-in">
         <div class="container">
           <h2 class="clients-title">
             Постійні клієнти
@@ -451,8 +458,12 @@
         </div>
       </div>
     </div>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
       <script src="./src/js/modal.js"></script>
+      
     </body>
   </html>
 
