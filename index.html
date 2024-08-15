@@ -21,9 +21,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
   integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" 
   crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./src/css/reset.css" />
-  <link rel="stylesheet" href="./src/css/style.css" />
-  
+  <link rel="stylesheet" href="./src/css/main.css">
 </head>
  
 <body>
@@ -81,7 +79,9 @@
       <div class="container">
           <ul class="about-list">
               <li class="about-item">
-                <img src="./src/img/about-img/antenna.webp" alt="antenna" class="img-about"  >
+                <div class="about-photo">
+                  <img src="./src/img/about-img/antenna.webp" alt="antenna" class="about-img">
+                </div>
                 <h2 class="about-title">УВАГА ДО ДЕТАЛЕЙ</h2>
                 <p class="about-description">
                   Ідейні міркування, і навіть початок повсякденної роботи з
@@ -90,7 +90,9 @@
               </li>
               
               <li class="about-item">
-                <img src="./src/img/about-img/clock.webp" alt="clock" class="img-about" > 
+                <div class="about-photo">
+                <img src="./src/img/about-img/clock.webp" alt="clock" class="about-img" > 
+                </div>
                 <h2 class="about-title">ПУНКТУАЛЬНІСТЬ</h2>
                 <p class="about-description">
                   Завдання організації, особливо рамки і місце навчання кадрів тягне
@@ -98,16 +100,18 @@
                 </p>
               </li>
                 <li class="about-item">
-                  <img src="./src/img/about-img/diagram.webp" alt="diagram" class="img-about" >
+                <div class="about-photo">
+                  <img src="./src/img/about-img/diagram.webp" alt="diagram" class="about-img" >
+                </div>
                   <h2 class="about-title">ПЛАНУВАННЯ</h2>
                   <p class="about-description">
                     Так само консультація з широким активом значною мірою зумовлює.
                   </p>
                 </li>
                 <li class="about-item">
-                  
-                  <img src="./src/img/about-img/astronaut.webp" alt="astronaut" class="img-about">
-                   
+                <div class="about-photo">
+                  <img src="./src/img/about-img/astronaut.webp" alt="astronaut" class="about-img">
+                </div>
                   <h2 class="about-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
                   <p class="about-description">
                     Значимість цих проблем настільки очевидна, що реалізація планових
@@ -337,9 +341,9 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="#" class="footer-logo">
-          <img src="./src/img/logo/logo-footer.webp" alt="logo-footer" class="footer-logo">
-       </a>
+        <div href="#" class="footer-logo">
+          <a href="#" class="footer-logo-link"><img src="./src/img/logo/logo-footer.webp" alt="logo-footer" class="footer-logo"></a>
+        </div>
       
       <div class="footer-lists">
       <ul class="footer-info-list">

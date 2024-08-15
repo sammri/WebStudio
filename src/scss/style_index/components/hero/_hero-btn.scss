@@ -1,0 +1,16 @@
+.hero-button {
+    line-height: 1.875;
+    background-color: var(--colorHover);
+    color: var(--colorTextContrast);
+    padding: 10px 32px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover{
+    border-radius: 0px;
+    transition: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

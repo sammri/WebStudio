@@ -1,0 +1,34 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  
+    .clients-cards {
+      display: flex;
+      gap: 30px;
+  
+      .clients-card {
+        padding: 22px 54px;
+        border: 1px solid var(--colorSVG);
+        border-radius: 4px;
+        transition: border 0.25s;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+        &:hover {
+          border: 1px solid var(--colorHover);
+  
+          .clients-icon {
+            fill: var(--colorHover);
+          }
+        }
+  
+        .clients-icon {
+          width: 65px;
+          height: 50px;
+          fill: var(--colorSVG);
+          transition: fill 0.25s linear;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,29 @@
+.about {
+    padding-top: 94px;
+    
+    .about-list {
+      gap: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: start;
+  
+      .about-item {
+        .img-about {
+          width: 100%;
+          height: auto;
+        }
+  
+        .about-title {
+          padding-top: 30px;
+          padding-bottom: 10px;
+        }
+  
+        .about-description {
+          color: var(--colorText);
+          font-weight: 400;
+        }
+      }
+    }
+}
+  
