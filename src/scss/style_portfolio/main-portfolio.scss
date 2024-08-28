@@ -1,18 +1,18 @@
-@import "./base/reset";
-@import "./base/variables";
-@import "./base/typography";
-@import "./base/base";
+@import "../global/base/reset";
+@import "../global/base/variables";
+@import "../global/base/typography";
+@import "../global/base/base";
 //
-@import "./layout/layout";
-
-@import "./components/header/header";
+@import "../global/layout/layout";
+//
+@import "../global/header/header";
 
 @import "./components/portfolio/portfolio";
 @import "./components/portfolio/filter-list";
 @import "./components/portfolio/projeckts/projeckts";
 @import "./components/portfolio/projeckts/projeckt";
 
-@import "./components/footer/footer";
-@import "./components/footer/info-list";
-@import "./components/footer/social_network-list";
-@import "./components/footer/newsletter-list";
+@import "../global/footer/footer";
+@import "../global/footer/info-list";
+@import "../global/footer/social_network-list";
+@import "../global/footer/newsletter-list";

@@ -1,34 +1,33 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  
-    .clients-cards {
-      display: flex;
-      gap: 30px;
-  
-      .clients-card {
-        padding: 22px 54px;
-        border: 1px solid var(--colorSVG);
-        border-radius: 4px;
-        transition: border 0.25s;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-        &:hover {
-          border: 1px solid var(--colorHover);
-  
-          .clients-icon {
-            fill: var(--colorHover);
-          }
-        }
-  
-        .clients-icon {
-          width: 65px;
-          height: 50px;
-          fill: var(--colorSVG);
-          transition: fill 0.25s linear;
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-      }
-    }
-  }
-  
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients__cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.clients__card {
+  padding: 22px 54px;
+  border: 1px solid var(--colorSVG);
+  border-radius: 4px;
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__card:hover {
+  border-color: var(--colorHover);
+}
+
+.clients__icon {
+  width: 65px;
+  height: 50px;
+  fill: var(--colorSVG);
+  transition: fill 0.25s linear;
+}
+
+.clients__card:hover .clients__icon {
+  fill: var(--colorHover);
+}
