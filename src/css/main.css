@@ -154,6 +154,15 @@ img {
   height: 100%;
 }
 
+.clients__title, .team__title, .services__title {
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
 .container {
   max-width: 1200px;
   padding-left: 15px;
@@ -294,7 +303,9 @@ img {
 .hero__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 30px;
 }
 
@@ -314,23 +325,12 @@ img {
   padding: 10px 32px;
   font-size: 16px;
   border-radius: 4px;
-  transition: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .hero__button:hover {
   border-radius: 0px;
-  transition: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.services__title, .team__title, .clients__title {
-  padding-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: start;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .about {
@@ -383,6 +383,9 @@ img {
 .services__cards {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
   gap: 30px;
 }
 
@@ -423,6 +426,8 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: nowrap;
+  gap: 0;
 }
 
 .team__item {
@@ -435,8 +440,11 @@ img {
 
 .team__photo {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
 }
 
 .team__img {
@@ -446,7 +454,9 @@ img {
 .team__info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 10px;
   padding: 20px 0 30px;
 }
@@ -464,18 +474,24 @@ img {
 
 .team__socials {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   gap: 10px;
 }
 
 .team__icon {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .team__icon:hover {
@@ -490,7 +506,7 @@ img {
   width: 20px;
   height: 20px;
   fill: var(--colorSVG);
-  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .clients {
@@ -500,16 +516,18 @@ img {
 
 .clients__cards {
   display: flex;
-  gap: 30px;
+  flex-direction: row;
   justify-content: center;
+  align-items: stretch;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients__card {
   padding: 22px 54px;
   border: 1px solid var(--colorSVG);
   border-radius: 4px;
-  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .clients__card:hover {
@@ -520,7 +538,7 @@ img {
   width: 65px;
   height: 50px;
   fill: var(--colorSVG);
-  transition: fill 0.25s linear;
+  transition: fill 0.25s linear 0s;
 }
 
 .clients__card:hover .clients__icon {

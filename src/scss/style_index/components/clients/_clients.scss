@@ -4,17 +4,14 @@
 }
 
 .clients__cards {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
+  @include flexbox(row, center, stretch, wrap, 30px);
 }
 
 .clients__card {
   padding: 22px 54px;
   border: 1px solid var(--colorSVG);
   border-radius: 4px;
-  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(border, 0.25s, cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 .clients__card:hover {
@@ -25,7 +22,7 @@
   width: 65px;
   height: 50px;
   fill: var(--colorSVG);
-  transition: fill 0.25s linear;
+  @include transition(fill, 0.25s, linear);
 }
 
 .clients__card:hover .clients__icon {

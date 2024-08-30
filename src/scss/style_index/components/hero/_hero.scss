@@ -22,10 +22,7 @@
 }
 
 .hero__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
+  @include flexbox(column, center, center, nowrap, 30px);
 }
 
 .hero__title {
@@ -44,12 +41,10 @@
   padding: 10px 32px;
   font-size: 16px;
   border-radius: 4px;
-  transition: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(all, 0.25s, cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 .hero__button:hover {
   border-radius: 0px;
-  transition: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(all, 0.25s, cubic-bezier(0.4, 0, 0.2, 1));
 }

@@ -279,10 +279,12 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 8px;
   font-size: 16px;
 }
-.portfolio-filter-list .filter-link {
+
+.filter-link {
   padding: 6px 22px;
   border-radius: 4px;
   font-weight: 500;
@@ -292,11 +294,12 @@ img {
   text-align: center;
   color: var(--colorTextTitle);
   background-color: var(--colorBackgroundSecondary);
-  transition: background-color 0.25s, color 0.25s, box-shadow 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   box-shadow: none;
 }
-.portfolio-filter-list .filter-link:hover {
+.filter-link:hover {
   background-color: var(--colorHover);
   color: var(--colorTextContrast);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -314,8 +317,7 @@ img {
 .projeckt {
   border: 1px solid var(--colorBorder);
   max-width: 370px;
-  transition: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   display: block;
 }
 .projeckt:hover {
@@ -325,10 +327,12 @@ img {
 }
 .projeckt .title-category {
   padding: 20px 24px;
-  gap: 4px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 4px;
 }
 .projeckt .projeckt-title {
   line-height: 2;
@@ -357,12 +361,15 @@ img {
   left: 0;
   top: 0;
   transform: translateY(100%);
-  transition: transform 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   padding-right: 24px;
   padding-left: 24px;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
 }
 .projeckt .overlay-text {
   font-size: 18px;

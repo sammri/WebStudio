@@ -1,8 +1,5 @@
 .team__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+  @include flexbox(row, space-between, flex-end);
 }
 
 .team__item {
@@ -14,9 +11,7 @@
 }
 
 .team__photo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexbox(row, center, center);
 }
 
 .team__img {
@@ -24,10 +19,7 @@
 }
 
 .team__info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  @include flexbox(column, center, center, nowrap, 10px);
   padding: 20px 0 30px;
 }
 
@@ -43,19 +35,15 @@
 }
 
 .team__socials {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  @include flexbox(row, center, center, nowrap, 10px);
 }
 
 .team__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexbox(row, center, center);
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(background-color, 0.25s, cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 .team__icon:hover {
@@ -70,5 +58,5 @@
   width: 20px;
   height: 20px;
   fill: var(--colorSVG);
-  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill, 0.25s, cubic-bezier(0.4, 0, 0.2, 1));
 }

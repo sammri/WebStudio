@@ -1,7 +1,5 @@
 .services__cards {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
+  @include flexbox(row, flex-start, stretch, nowrap, 30px);
 }
 
 .services__card {
