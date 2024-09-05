@@ -25,12 +25,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px; 
+  width: 528px;
   min-height: 581px;
   transform: translate(-50%, -50%) perspective(2500px) rotateY(0);
   padding: 40px;
   border-radius: 4px;
-  background-color: var(--colorTextContrast);
+  background-color: $color-text-contrast;
   transition-property: transform;
   transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -47,7 +47,7 @@
   text-align: center;
   margin-bottom: 12px;
   font-size: 20px;
-  color: var(--colorTextTitle);
+  color: $color-text-title;
 }
 
 .modal__form {
@@ -74,13 +74,13 @@
   left: 10px;
   width: 12px;
   height: 12px;
-  fill: var(--colorTextTitle);
+  fill: $color-text-title;
 }
 
 .group-input__label {
   font-weight: 400;
   font-size: 12px;
-  color: var(--colorText);
+  color: $color-text;
 }
 
 .group-input__input {
@@ -95,7 +95,7 @@
 
 .group-input__input:focus,
 .group-input__input:hover {
-  border-color: rgb(33, 150, 243);
+  border-color: $color-hover;
   outline: none;
 }
 
@@ -127,7 +127,7 @@
 }
 
 .form-checkbox__link {
-  color: var(--colorHover);
+  color: $color-hover;
   text-decoration: underline;
 }
 
@@ -137,8 +137,8 @@
 
 .form-submit__button {
   padding: 16px 52px;
-  color: var(--colorTextContrast);
-  background-color: var(--colorHover);
+  color: $color-text-contrast;
+  background-color: $color-hover;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -161,7 +161,7 @@
 
 .modal__btn-close:hover .modal__icon {
   transform: rotate(360deg);
-  fill: var(--colorHover);
+  fill: $color-hover;
 }
 
 .no-scroll {

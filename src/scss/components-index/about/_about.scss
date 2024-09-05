@@ -21,7 +21,7 @@
 
 .about__photo {
   padding: 25px 100px;
-  background-color: var(--colorBackgroundSecondary);
+  background-color: $color-background-secondary;
 }
 
 .about__img {
@@ -36,6 +36,6 @@
 }
 
 .about__description {
-  color: var(--colorText);
+  color: $color-text;
   font-weight: 400;
 }

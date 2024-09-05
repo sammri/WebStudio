@@ -1,5 +1,5 @@
 .hero {
-  background-color: var(--colorBackgroundPrimary);
+  background-color: $color-background-primary;
   padding-top: 200px;
   padding-bottom: 200px;
   position: relative; 
@@ -22,13 +22,17 @@
 }
 
 .hero__container {
-  @include flexbox(column, center, center, nowrap, 30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 .hero__title {
   line-height: 1.363;
   font-size: 44px;
-  color: var(--colorTextContrast);
+  color: $color-text-contrast;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -36,15 +40,15 @@
 
 .hero__button {
   line-height: 1.875;
-  background-color: var(--colorHover);
-  color: var(--colorTextContrast);
+  background-color: $color-hover;
+  color: $color-text-contrast;
   padding: 10px 32px;
   font-size: 16px;
   border-radius: 4px;
-  @include transition(all, 0.25s, cubic-bezier(0.4, 0, 0.2, 1));
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__button:hover {
   border-radius: 0px;
-  @include transition(all, 0.25s, cubic-bezier(0.4, 0, 0.2, 1));
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }

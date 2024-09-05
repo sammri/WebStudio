@@ -1,14 +1,11 @@
-:root {
-  /* Кольори макету */
-  /* Текст */
-  --colorTextTitle: #212121;
-  --colorText: #757575;
-  --colorTextContrast: #fff;
-  --colorTextAdd: rgba(255, 255, 255, 0.6);
-  --colorHover: #2196f3;
-  /* Фон */
-  --colorBackgroundPrimary: #2f303a;
-  --colorBackgroundSecondary: #f5f4fa;
-  --colorSVG: #AFB1B8;
-  --colorBorder:#EEEEEE;
-}
+// Текст
+$color-text-title: #212121;
+$color-text: #757575;
+$color-text-contrast: #fff;
+$color-text-add: rgba(255, 255, 255, 0.6);
+$color-hover: #2196f3;
+// Фон
+$color-background-primary: #2f303a;
+$color-background-secondary: #f5f4fa;
+$color-svg: #AFB1B8;
+$color-border: #EEEEEE;

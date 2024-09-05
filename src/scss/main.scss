@@ -1,0 +1,32 @@
+@import "./global/base/reset";
+@import "./utils/variables";
+@import "./global/base/typography";
+@import "./global/base/base";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+
+//
+@import "./global/layout/layout";
+//
+@import "./global/header/header";
+
+@import "./components-index/hero/hero";
+
+
+@import "./global/title";
+@import "./components-index/about/about";
+
+@import "./components-index/services/services/services";
+
+@import "./components-index/team/team";
+
+
+@import "./components-index/clients/clients";
+
+
+
+@import "./global/footer/footer";
+
+@import "./components-index/backdrop/backdrop";
+
+
