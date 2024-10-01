@@ -12,6 +12,8 @@
     flex-wrap: nowrap;
     gap: 8px;
     font-size: 16px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
   
   .filter-link {
@@ -37,19 +39,23 @@
   }
   
   .projeckts {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 370px);
-    column-gap: 30px;
-    row-gap: 30px;
-    justify-content: center;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, 370px);
+    // column-gap: 30px;
+    // row-gap: 30px;
+    // justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+
   }
   
   .projeckt {
     border: 1px solid $color-border;
-    max-width: 370px;
+    max-width: 450px;
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
-  
     &:hover {
       box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
       background: #fff;

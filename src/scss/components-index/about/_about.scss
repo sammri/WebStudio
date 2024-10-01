@@ -1,41 +1,46 @@
 .about {
-  padding-top: 94px;
+  padding-top: 5vh; 
+  padding-bottom: 5vh;
 }
 
 .about__container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
 }
 
 .about__list {
   gap: 30px;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: start;
 }
 
 .about__item {
-  flex: 1;
+  width: 100%;
 }
 
 .about__photo {
-  padding: 25px 100px;
   background-color: $color-background-secondary;
+  display: flex;
+  justify-content: center;
 }
 
 .about__img {
-  width: 70px;
-  height: 70px;
+  max-width: 70px;
+  height: auto;
 }
 
 .about__title {
   padding-top: 30px;
   padding-bottom: 10px;
   font-weight: 700;
+  text-align: center;
 }
 
 .about__description {
   color: $color-text;
   font-weight: 400;
+}
+@media (min-width: 768px) {
+
 }
