@@ -9,15 +9,17 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 30px; 
 }
 
 .clients__card {
-  padding: 22px 54px;
+  padding: 22px 64px;
   border: 1px solid $color-svg;
   border-radius: 4px;
   transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  
+  max-width: 292px; 
+  display: flex;
+  justify-content: center;
 }
 
 .clients__card:hover {
@@ -34,3 +36,14 @@
 .clients__card:hover .clients__icon {
   fill: $color-hover;
 }
+
+@media (min-width: 768px) {
+  .clients__cards {
+      gap: 30px;
+      display: grid;
+        grid-template-columns: repeat(3, 226px);
+        justify-content: center;
+  }
+}
+
+

@@ -87,5 +87,15 @@
 }
  
 
+
+@media (min-width: 768px) {
+  .team__list {
+    gap: 30px;
+    display: grid;
+      grid-template-columns: repeat(2, 354px);
+      justify-content: center;
+  }
+}
+
  
 
