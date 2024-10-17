@@ -13,7 +13,6 @@
     gap: 8px;
     font-size: 16px;
     flex-wrap: wrap;
-    justify-content: flex-start;
   }
   
   .filter-link {
@@ -43,7 +42,7 @@
     // grid-template-columns: repeat(auto-fill, 370px);
     // column-gap: 30px;
     // row-gap: 30px;
-    // justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -96,7 +95,7 @@
     .projeckt-overlay {
       background-color: rgba(33, 150, 243, 0.8);
       color: $color-text-contrast;
-      width: 100%;
+      flex-grow: 1;
       height: 100%;
       position: absolute;
       left: 0;
@@ -160,4 +159,17 @@
       opacity: 1;
     }
   }
+
+
+  @media (min-width: 768px) {
+    .projeckts {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 370px);
+      column-gap: 30px;
+      row-gap: 30px;
+      justify-content: center;
+    }
+    
+  }
+
   

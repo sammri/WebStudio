@@ -96,6 +96,15 @@
       justify-content: center;
   }
 }
+@media (min-width: 1200px) {
+  .team__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
 
  
 

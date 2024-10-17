@@ -28,43 +28,45 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <a href="#" class="header__logo">
+      <a href="#" class="logo">
         <img src="./src/img/logo/logo-header.webp" alt="logo-header" class="header__logo-image">
       </a>
-      <div class="header__contact-list">
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a href="#" rel="preconnect" class="header__nav-link header__nav-link--active">Студія</a>
+        <div class="header__contact-list">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#" rel="preconnect" class="header__nav-link header__nav-link--active">Студія</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="./src/pages/portfolio.html" rel="preconnect" class="header__nav-link ">Портфоліо</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" rel="preconnect" class="header__nav-link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="contact-block">
+          <ul class="header__contact">
+            <li class="header__contact-item">
+              <a href="mailto:info@devstudio.com" class="header__contact-link">
+                <svg width="106" height="60" class="header__contact-icon">
+                  <use href="./src/img/header-icons/symbol-defs.svg#icon-envelope" fill="currentColor"></use>
+                </svg>
+                
+                info@devstudio.com
+              </a>
             </li>
-            <li class="header__nav-item">
-              <a href="./src/pages/portfolio.html" rel="preconnect" class="header__nav-link ">Портфоліо</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" rel="preconnect" class="header__nav-link">Контакти</a>
+            <li class="header__contact-item">
+              <a href="tel:+380961111111" class="header__contact-link">
+                <svg width="106" height="60" class="header__contact-icon">
+                  <use href="./src/img/header-icons/symbol-defs.svg#icon-envelope" fill="currentColor"></use>
+                </svg>
+                
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-      </div>
-      <div class="contact-block">
-        <ul class="header__contact">
-          <li class="header__contact-item">
-            <a href="mailto:info@devstudio.com" class="header__contact-link">
-              <svg width="106" height="60" class="header__contact-icon">
-                <use href="./src/img/header-icons/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header__contact-item">
-            <a href="tel:+380961111111" class="header__contact-link">
-              <svg width="106" height="60" class="header__contact-icon">
-                <use href="./src/img/header-icons/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   </header>  
@@ -342,15 +344,17 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__photo">
-          <a href="#" class="footer__logo">
-            <img src="./src/img/logo/logo-footer.webp" alt="logo-footer" class="footer__logo-image">
-          </a>
-        </div>
+        
     
         <div class="footer__lists">
+          
           <ul class="footer__info-list">
             <li class="footer__info-item">
+              <div class="footer__photo">
+                <a href="#" class="footer__logo">
+                  <img src="./src/img/logo/logo-footer.webp" alt="logo-footer" class="footer__logo-image">
+                </a>
+              </div>
               <address class="footer__info-address">
                 м. Київ, пр-т Лесі Українки, 26
               </address>

@@ -4,3 +4,11 @@
     font-size: 36px;
     text-align: center;
 }
+%column{
+    display: flex;
+    flex-direction: column;
+}
+%row{
+    display: flex;
+    flex-direction: row;
+}

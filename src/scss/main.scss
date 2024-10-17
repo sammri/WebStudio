@@ -8,25 +8,29 @@
 //
 @import "./global/layout/layout";
 //
-@import "./global/header/header";
+@import "./global/header";
 
-@import "./components-index/hero/hero";
+@import "./components/hero";
 
 
 @import "./global/title";
-@import "./components-index/about/about";
+@import "./components/about";
 
-@import "./components-index/services/services";
+@import "./components/services";
 
-@import "./components-index/team/team";
-
-
-@import "./components-index/clients/clients";
+@import "./components/team";
 
 
+@import "./components/clients";
 
-@import "./global/footer/footer";
 
-@import "./components-index/backdrop/backdrop";
+
+@import "./components/backdrop";
+@import "./global/footer";
+
+
+
+
+
 
 
