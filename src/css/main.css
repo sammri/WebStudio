@@ -308,6 +308,18 @@ img {
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (min-width: 768px) {
+  .hero__title {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    text-align: center;
+  }
+}
 .about {
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -332,6 +344,7 @@ img {
 .about__photo {
   background-color: #f5f4fa;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 

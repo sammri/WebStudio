@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <style>
+        /* Общие стили */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .list-item {
+            width: 550px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 15px;
+            position: relative;
+
+
+        }
+        h3,
+        h4,
+        p{
+            margin: 0;
+        }
+        .item-photo,
+        .item-img {
+            max-width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        .bookmark {
+            position: absolute;
+            top: 0px;
+            left: 5px;
+            width: 45px;
+            height: auto;
+        }
+
+        .item-description {
+            margin-left: 15px;
+            width: 100%;
+        }
+
+        .description__card-title {
+            font-size: 24px;
+            font-weight: 700;
+
+
+        }
+
+        .description__card-subtitle,
+        .list-item,
+        .description__card-text,
+        .bottom {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .description__card-subtitle {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .subtitle-photo {
+            width: 40px;
+            border: 1px solid black;
+            border-radius: 50%;
+            padding: 5px;
+            margin-right: 5px;
+        }
+
+        .description__card-text {
+            gap: 15px;
+            
+            
+        }
+        .card-text{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .clock{
+            width: 15px;
+        }
+        .bottom-img{
+            width: 35px;
+            height: auto;
+            border: 1px solid black;
+            border-radius: 4px;
+
+        }
+         .bottom{
+            position: absolute;
+            bottom: 0;
+            right: 5px;
+            gap: 10px;
+
+         }
+        
+         @media (max-width: 468px) {
+            .list-item{
+                width: 450px;
+            }
+            .description__card-text{
+                flex-direction: column;
+                gap: 5px;
+            }
+            .subtitle-photo{
+                width: 30px;
+            }
+         }
+    </style>
+</head>
+
+<body>
+
+    <div class="list-item">
+        <div class="item-photo">
+            <img class="item-img" src="https://i.ibb.co/VYB1T7M4/chicken-broth.webp" alt="logo">
+        </div>
+        <div class="item-description">
+            <h3 class="description__card-title">
+                Че то там
+            </h3>
+            <h4 class="description__card-subtitle">
+                <img src="https://i.ibb.co/ZzwSx1dV/hat-com.png" alt="" class="subtitle-photo">
+                Cook 13245
+            </h4>
+
+            </p>
+            <div class="description__card-text">
+                <p class="card-text">100 ingasdasd
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="clock">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </p>
+                <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="clock">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                    004 asdadsa
+                    
+                </p>
+                <p class="card-text">005 asdasd
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="clock">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </p>
+            </div>
+            <div class="bottom">
+                    <p class="card-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="clock">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg> 0
+                    </p>
+                    <p class="card-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="clock">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg> 0
+                    </p>
+                    <p class="card-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="clock">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg> 999
+                    </p>
+                    <div class="bottom-photo">
+                    <img src="https://i.ibb.co/5WbCRt9h/japan.png" alt="" class="bottom-img" >
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="darkred" viewBox="0 0 24 24" stroke-width="1.5" stroke="darkred"
+            class="bookmark">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907
+                    2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057
+                    1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+        </svg>
+        
+    </div>
+
+
+</body>
+
+</html>
